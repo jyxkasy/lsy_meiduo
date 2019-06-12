@@ -62,7 +62,7 @@ var vm = new Vue({
             if (re.test(this.username)) {
                 this.error_name = false;
             } else {
-                this.error_name_message = '请输入5-20个字符的用户名';
+                this.error_name_message;
                 this.error_name = true;
             }
 
@@ -74,25 +74,29 @@ var vm = new Vue({
             if (re.test(this.password)) {
                 this.error_password = false;
             } else {
+                this.error_password_message
                 this.error_password = true;
             }
         },
         // 确认密码
         check_password2: function () {
             if (this.password != this.password2) {
-                this.error_check_password = true;
+
+                this.error_password2 = true;
             } else {
-                this.error_check_password = false;
+
+                this.error_password2 = false;
+
             }
         },
         // 检查手机号
         check_mobile: function () {
             var re = /^1[345789]\d{9}$/;
             if (re.test(this.mobile)) {
-                this.error_phone = false;
+                this.error_mobile = false;
             } else {
-                this.error_mobile_message = '您输入的手机号格式不正确';
-                this.error_phone = true;
+
+                this.error_mobile = true;
             }
 
         },
@@ -182,7 +186,7 @@ var vm = new Vue({
                 })
         },
         // 表单提交
-        on_submit(){
+        on_submit() {
             this.check_username();
             this.check_password();
             this.check_password2();
