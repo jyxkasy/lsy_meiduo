@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 
 # Create your views here.
+from django.urls import reverse
 from django.views import View
 from apps.users.models import User
 import re
@@ -25,7 +26,7 @@ class Register(View):
 
         # 判断数据
         # 数据是否完整
-        if not all([username, password, password2, mobile]):
+        if not all([username, password, password2, mobile,allow]):
             return http.HttpResponseBadRequest('参数不齐')
         if not re.match(r'[a-zA-Z0-9_]{5,20}', username):
             return http.HttpResponseBadRequest('姓名不符合要求')
@@ -39,19 +40,21 @@ class Register(View):
             return http.HttpResponseBadRequest('请勾选用户协议')
         # 用户数据入库
 
+        # User.objects.create  直接入库 理论是没问题的 但是 大家会发现 密码是明文
         try:
             user = User.objects.create_user(username=username, password=password, mobile=mobile)
         except Exception as e:
-
-            return render(request, 'register.html', {'register_errmsg': '注册失败'})
-
-            # 错误日志
-        return http.HttpResponse('ok')
+            logger.error(e)
+            return render(request, 'register.html', context={'error_message': '数据库异常'})
 
 
-class IndexView(View):
-    def get(self, request):
-        return render(request, 'index.html')
+
+        from django.contrib.auth import login
+        login(request, user)
+
+        return redirect(reverse('contents:contents'))
+
+
 
 
 # 校验用户姓名重复
