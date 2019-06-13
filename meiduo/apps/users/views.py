@@ -1,10 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views import View
-from apps.users import models
+from apps.users.models import User
 import re
 from django import http
+from django.contrib.auth import login
+import logging
+
+logger = logging.getLogger('django')
 
 
 class Register(View):
@@ -24,16 +28,52 @@ class Register(View):
             return http.HttpResponseBadRequest('参数不齐')
         if not re.match(r'[a-zA-Z0-9_]{5,20}', username):
             return http.HttpResponseBadRequest('姓名不符合要求')
-        if not re.match(r'[a-zA-Z0-9_]{8,20}'):
+        if not re.match(r'[a-zA-Z0-9_]{8,20}', password):
             return http.HttpResponseBadRequest('密码不合法')
         if password != password2:
             return http.HttpResponseBadRequest('两次密码不相同')
         if not re.match(r'^1[3-9]\d{9}$', mobile):
             return http.HttpResponseBadRequest('请输入正确的手机号码')
 
+        # 用户数据入库
+        count = User.objects.filter(username=username).count()
+        if count != 0:
+            return http.JsonResponse()
         try:
-            count = models.User.objects.create_user(username=username)
+            user = User.objects.create_user(username=username, password=password, mobile=mobile)
         except Exception as e:
-            pass
+            return render(request, 'register.html', {'register_errmsg': '注册失败'})
 
-        # 入库
+        # 错误日志
+        login(request, user)
+
+        return http.HttpResponse('成功')
+
+
+class IndexView(View):
+    def get(self, request):
+        return render(request, 'index.html')
+
+
+# 校验用户姓名重复
+class UsernameCountView(View):
+
+    def get(self, request, username):
+        try:
+            count = User.objects.filter(username=username).count()
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': 400, 'count': count})
+        return http.JsonResponse({'code': 0, 'count': count})
+
+
+# 校验用户电话号码是否重复
+class MobileCountView(View):
+    def get(self, request, mobile):
+        try:
+            count = User.objects.filter(mobile=mobile).count()
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': 0})
+        return http.JsonResponse({'code': 0, 'count': count})
+    

@@ -392,3 +392,230 @@ INFO 2019-06-12 11:04:17,474 basehttp 124 "GET /static/images/interval_line.png 
 INFO 2019-06-12 11:04:17,475 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
 INFO 2019-06-12 11:05:54,559 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
 INFO 2019-06-12 11:06:28,873 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-12 12:04:12,866 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-12 12:04:12,881 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,885 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,889 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,891 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,891 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,891 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,912 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,913 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,916 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,918 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,918 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:04:12,919 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 7743
+ERROR 2019-06-12 12:04:52,395 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 27, in post
+    if not re.match(r'[a-zA-Z0-9_]{8,20}'):
+TypeError: match() missing 1 required positional argument: 'string'
+ERROR 2019-06-12 12:04:52,434 basehttp 124 "POST /register/ HTTP/1.1" 500 84095
+ERROR 2019-06-12 12:07:26,490 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 38, in post
+    return redirect(reversed('register:contents'))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 56, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 147, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '<reversed object at 0x7f6e9c3b2a20>' not found. '<reversed object at 0x7f6e9c3b2a20>' is not a valid view function or pattern name.
+ERROR 2019-06-12 12:07:26,531 basehttp 124 "POST /register/ HTTP/1.1" 500 103698
+INFO 2019-06-12 12:09:19,234 basehttp 124 "POST /register/ HTTP/1.1" 200 4996
+INFO 2019-06-12 12:09:19,257 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,258 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,266 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,268 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,273 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,273 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,273 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,293 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,293 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,343 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,347 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:09:19,348 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:10:42,557 basehttp 124 "POST /register/ HTTP/1.1" 200 4996
+ERROR 2019-06-12 12:15:04,195 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 38, in post
+    return redirect(reversed('register:contents'))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 56, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 147, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '<reversed object at 0x7fc1caa194a8>' not found. '<reversed object at 0x7fc1caa194a8>' is not a valid view function or pattern name.
+ERROR 2019-06-12 12:15:47,548 basehttp 124 "POST /register/ HTTP/1.1" 500 105479
+INFO 2019-06-12 12:20:08,635 basehttp 124 "POST /register/ HTTP/1.1" 200 4996
+INFO 2019-06-12 12:20:08,663 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,664 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,665 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,668 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,670 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,678 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,681 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,703 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,704 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,741 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,743 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:20:08,745 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+WARNING 2019-06-12 12:24:53,600 basehttp 124 "POST /register/ HTTP/1.1" 400 12
+INFO 2019-06-12 12:26:26,457 basehttp 124 "POST /register/ HTTP/1.1" 200 6
+ERROR 2019-06-12 12:42:36,951 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 40, in post
+    login(request, username)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-12 12:42:37,016 basehttp 124 "POST /register/ HTTP/1.1" 500 146890
+INFO 2019-06-12 12:43:40,783 basehttp 124 "POST /register/ HTTP/1.1" 200 4996
+INFO 2019-06-12 12:43:40,810 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,815 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,818 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,819 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,824 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,828 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,825 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,839 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,844 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,849 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,850 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,851 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:43:40,885 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+ERROR 2019-06-12 12:44:24,042 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 40, in post
+    login(request,user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-12 12:44:24,098 basehttp 124 "POST /register/ HTTP/1.1" 500 147478
+WARNING 2019-06-12 12:44:37,521 base 152 Not Found: /
+WARNING 2019-06-12 12:44:37,521 basehttp 124 "GET / HTTP/1.1" 404 2263
+INFO 2019-06-12 12:45:06,377 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:45:06,385 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-12 12:45:06,387 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
