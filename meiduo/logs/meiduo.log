@@ -778,3 +778,362 @@ INFO 2019-06-13 06:35:03,761 basehttp 124 "GET /static/images/interval_line.png 
 INFO 2019-06-13 06:35:03,766 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
 INFO 2019-06-13 06:35:03,769 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
 INFO 2019-06-13 06:35:06,682 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
+WARNING 2019-06-13 08:03:21,184 base 152 Not Found: /
+WARNING 2019-06-13 08:03:21,185 basehttp 124 "GET / HTTP/1.1" 404 2714
+INFO 2019-06-13 08:03:26,905 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 08:03:26,946 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9068
+INFO 2019-06-13 08:03:31,751 basehttp 124 "GET /usernames/1231231/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 08:03:38,301 basehttp 124 "GET /mobile/13456789986/count/ HTTP/1.1" 200 23
+WARNING 2019-06-13 09:04:19,884 base 152 Not Found: /image_code/123
+WARNING 2019-06-13 09:04:19,885 basehttp 124 "GET /image_code/123 HTTP/1.1" 404 2977
+INFO 2019-06-13 09:04:37,356 basehttp 124 "GET /image_codes/123 HTTP/1.1" 301 0
+ERROR 2019-06-13 09:04:37,372 exception 135 Internal Server Error: /image_codes/123/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:04:37,418 basehttp 124 "GET /image_codes/123/ HTTP/1.1" 500 118940
+ERROR 2019-06-13 09:06:32,110 exception 135 Internal Server Error: /image_codes/123/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:06:32,154 basehttp 124 "GET /image_codes/123/ HTTP/1.1" 500 119058
+ERROR 2019-06-13 09:06:32,934 exception 135 Internal Server Error: /image_codes/123/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:06:32,975 basehttp 124 "GET /image_codes/123/ HTTP/1.1" 500 119071
+WARNING 2019-06-13 09:06:57,205 base 152 Not Found: /register/image_codes/123
+WARNING 2019-06-13 09:06:57,205 basehttp 124 "GET /register/image_codes/123 HTTP/1.1" 404 3007
+ERROR 2019-06-13 09:07:15,761 exception 135 Internal Server Error: /image_codes/123/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:07:15,807 basehttp 124 "GET /image_codes/123/ HTTP/1.1" 500 118918
+ERROR 2019-06-13 09:07:57,511 exception 135 Internal Server Error: /image_codes/123/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:07:57,555 basehttp 124 "GET /image_codes/123/ HTTP/1.1" 500 119054
+ERROR 2019-06-13 09:08:45,305 exception 135 Internal Server Error: /image_codes/12366/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:08:45,352 basehttp 124 "GET /image_codes/12366/ HTTP/1.1" 500 118976
+ERROR 2019-06-13 09:10:06,303 exception 135 Internal Server Error: /image_codes/12366/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:10:06,343 basehttp 124 "GET /image_codes/12366/ HTTP/1.1" 500 119107
+ERROR 2019-06-13 09:11:11,278 exception 135 Internal Server Error: /image_codes/12366/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:12:03,888 basehttp 124 "GET /image_codes/12366/ HTTP/1.1" 500 121002
+ERROR 2019-06-13 09:13:16,807 exception 135 Internal Server Error: /image_codes/12366/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 89, in get
+    redis_conn.setex(uuid, 240, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-13 09:13:16,960 basehttp 124 "GET /image_codes/12366/ HTTP/1.1" 500 121052
+INFO 2019-06-13 09:19:39,882 basehttp 124 "GET /image_codes/12366/ HTTP/1.1" 200 3133
+WARNING 2019-06-13 09:19:40,590 base 152 Not Found: /favicon.ico
+WARNING 2019-06-13 09:19:40,592 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2968
+INFO 2019-06-13 09:22:02,390 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-13 09:22:02,419 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+ERROR 2019-06-13 09:22:02,481 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:22:02,595 basehttp 124 "GET /image_codes/d49c8c63-8475-4d11-940a-289de8af2c4a/ HTTP/1.1" 400 72325
+ERROR 2019-06-13 09:22:04,303 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:22:04,398 basehttp 124 "GET /image_codes/9af7c5e9-3e84-42ef-b582-8cfbe5724bf1/ HTTP/1.1" 400 72325
+ERROR 2019-06-13 09:22:05,316 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:22:05,409 basehttp 124 "GET /image_codes/098b1357-d711-49c7-bdd8-7ab0da5c2059/ HTTP/1.1" 400 72325
+ERROR 2019-06-13 09:22:14,119 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:22:14,217 basehttp 124 "GET /image_codes/f22fa01b-fda1-4577-92de-b6356fc3daff/ HTTP/1.1" 400 72324
+ERROR 2019-06-13 09:27:55,458 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:27:55,553 basehttp 124 "GET /image_codes/14c7c184-bddf-4f8b-973f-f239bf9c4ef9/ HTTP/1.1" 400 72324
+ERROR 2019-06-13 09:30:10,702 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:30:10,801 basehttp 124 "GET /image_codes/da00e9f8-42dd-4eff-a807-2c4977284b7f/ HTTP/1.1" 400 72324
+INFO 2019-06-13 09:31:02,335 basehttp 124 "GET /image_codes/f22fa01b-fda1-4577-92de-b6356fc3daff/ HTTP/1.1" 200 3469
+ERROR 2019-06-13 09:31:34,797 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:31:34,906 basehttp 124 "GET /image_codes/244773fd-9a60-47c4-97ba-6e480ed1d048/ HTTP/1.1" 400 72324
+ERROR 2019-06-13 09:36:14,933 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:36:15,026 basehttp 124 "GET /image_codes/5a9d7b91-8601-464a-b72f-0d1f380e961d/ HTTP/1.1" 400 72324
+ERROR 2019-06-13 09:36:45,880 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:36:45,987 basehttp 124 "GET /image_codes/5a9d7b91-8601-464a-b72f-0d1f380e961d/ HTTP/1.1" 400 72361
+ERROR 2019-06-13 09:36:46,034 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:36:46,153 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 71755
+ERROR 2019-06-13 09:36:59,647 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2019-06-13 09:36:59,754 basehttp 124 "GET /image_codes/5a9d7b91-8601-464a-b72f-0d1f380e961d/ HTTP/1.1" 400 72496
+INFO 2019-06-13 09:39:11,728 basehttp 124 "GET /image_codes/25d2d3db-cf5b-4241-a201-7dcdaa7e4628/ HTTP/1.1" 200 2982
+INFO 2019-06-13 09:39:20,068 basehttp 124 "GET /image_codes/93262a21-8117-429a-a6c7-a3425403d391/ HTTP/1.1" 200 3123
+INFO 2019-06-13 09:39:26,627 basehttp 124 "GET /image_codes/ddfeddc4-482a-4b6b-b3ec-00c8e4c79b21/ HTTP/1.1" 200 3461
+INFO 2019-06-13 09:39:27,155 basehttp 124 "GET /image_codes/f8a9b753-3b51-493d-9fc2-2e950738a57f/ HTTP/1.1" 200 3329
+INFO 2019-06-13 09:39:27,671 basehttp 124 "GET /image_codes/3405bd26-3411-4c5d-a273-131d0452edac/ HTTP/1.1" 200 2912

@@ -37,7 +37,6 @@ class Register(View):
 
         # 用户数据入库
 
-
         try:
             user = User.objects.create_user(username=username, password=password, mobile=mobile)
         except Exception as e:
@@ -72,5 +71,20 @@ class MobileCountView(View):
             count = User.objects.filter(mobile=mobile).count()
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code': 400, 'count':count})
+            return http.JsonResponse({'code': 400, 'count': count})
         return http.JsonResponse({'code': 0, 'count': count})
+
+
+from libs.captcha.captcha import captcha
+from django_redis import get_redis_connection
+
+
+class ImageCode(View):
+    def get(self, requset, uuid):
+        text, image = captcha.generate_captcha()
+        # 链接redis
+        redis_conn = get_redis_connection('code')
+
+        # 保存在redis
+        redis_conn.setex(uuid, 240, text)
+        return http.HttpResponse(image, content_type='image/jpeg')

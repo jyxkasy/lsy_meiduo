@@ -57,6 +57,16 @@ var vm = new Vue({
             // 设置页面中图片验证码img标签的src属性
             this.image_code_url = this.host + "/image_codes/" + this.image_code_id + "/";
             console.log(this.image_code_url);
+
+            axios.get(this.image_code_url).then(response=>{
+
+                }
+
+
+            )
+
+
+
         },
         // 检查用户名
         check_username: function () {
@@ -84,6 +94,7 @@ var vm = new Vue({
                     this.error_name_message='用户名已注册';
                 }
             }).catch(error=>{
+
 
             })
 
