@@ -21,6 +21,7 @@ class Register(View):
         password = request.POST.get('password')
         password2 = request.POST.get('password2')
         mobile = request.POST.get('mobile')
+        allow = request.POST.get('allow')
 
         # 判断数据
         # 数据是否完整
@@ -34,7 +35,8 @@ class Register(View):
             return http.HttpResponseBadRequest('两次密码不相同')
         if not re.match(r'^1[3-9]\d{9}$', mobile):
             return http.HttpResponseBadRequest('请输入正确的手机号码')
-
+        if allow != 'on':
+            return http.HttpResponseBadRequest('请勾选用户协议')
         # 用户数据入库
 
         try:
@@ -44,7 +46,7 @@ class Register(View):
             return render(request, 'register.html', {'register_errmsg': '注册失败'})
 
             # 错误日志
-        return http.HttpResponse('成功')
+        return http.HttpResponse('ok')
 
 
 class IndexView(View):
@@ -88,3 +90,4 @@ class ImageCode(View):
         # 保存在redis
         redis_conn.setex(uuid, 240, text)
         return http.HttpResponse(image, content_type='image/jpeg')
+
