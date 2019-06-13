@@ -75,8 +75,9 @@ var vm = new Vue({
             if (re.test(this.username)) {
                 this.error_name = false;
             } else {
-                this.error_mobile_message = '请输入5-20个字符的用户名';
+
                 this.error_name = true;
+                this.error_name_message;
 
             }
 
@@ -112,9 +113,12 @@ var vm = new Vue({
         // 确认密码
         check_password2: function () {
             if (this.password != this.password2) {
-                this.error_check_password = true;
+
+                this.error_password2 = true;
+                this.error_password2_message
             } else {
-                this.error_check_password = false;
+
+                this.error_password2 = false;
             }
         },
         // 检查手机号
@@ -123,8 +127,8 @@ var vm = new Vue({
             if (re.test(this.mobile)) {
                 this.error_mobile = false;
             } else {
-                this.error_mobile_message = '您输入的手机号格式不正确';
-                this.error_phone = true;
+                this.error_mobile_message;
+                this.error_mobile= true;
             }
 
 
@@ -185,7 +189,7 @@ var vm = new Vue({
             this.check_mobile();
             this.check_image_code();
 
-            if (this.error_phone == true || this.error_image_code == true) {
+            if (this.error_mobile == true || this.error_image_code == true) {
                 this.sending_flag = false;
                 return;
             }
