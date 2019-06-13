@@ -36,17 +36,15 @@ class Register(View):
             return http.HttpResponseBadRequest('请输入正确的手机号码')
 
         # 用户数据入库
-        count = User.objects.filter(username=username).count()
-        if count != 0:
-            return http.JsonResponse()
+
+
         try:
             user = User.objects.create_user(username=username, password=password, mobile=mobile)
         except Exception as e:
+
             return render(request, 'register.html', {'register_errmsg': '注册失败'})
 
-        # 错误日志
-        login(request, user)
-
+            # 错误日志
         return http.HttpResponse('成功')
 
 
@@ -74,6 +72,5 @@ class MobileCountView(View):
             count = User.objects.filter(mobile=mobile).count()
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code': 0})
+            return http.JsonResponse({'code': 400, 'count':count})
         return http.JsonResponse({'code': 0, 'count': count})
-    

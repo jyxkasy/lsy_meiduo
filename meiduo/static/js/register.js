@@ -34,6 +34,8 @@ var vm = new Vue({
     mounted: function () {
         // 向服务器获取图片验证码
         this.generate_image_code();
+
+
     },
     methods: {
         generateUUID: function () {
@@ -58,13 +60,32 @@ var vm = new Vue({
         },
         // 检查用户名
         check_username: function () {
+            // alert('验证用户名');
             var re = /^[a-zA-Z0-9_-]{5,20}$/;
             if (re.test(this.username)) {
                 this.error_name = false;
             } else {
-                this.error_name_message;
+                this.error_mobile_message = '请输入5-20个字符的用户名';
                 this.error_name = true;
+
             }
+
+        //    在这里发送一个axios 请求
+        //    1.组织url
+            let url = '/usernames/'+this.username+'/count/';
+        //    2.发送请求
+            axios.get(url).then(response=>{
+                //    3.请求成功的回调的业务逻辑
+                // console.log(response)
+                if(response.data.count == 0){
+                    this.error_name=false
+                }else{
+                    this.error_name=true;
+                    this.error_name_message='用户名已注册';
+                }
+            }).catch(error=>{
+
+            })
 
 
         },
@@ -74,19 +95,15 @@ var vm = new Vue({
             if (re.test(this.password)) {
                 this.error_password = false;
             } else {
-                this.error_password_message
                 this.error_password = true;
             }
         },
         // 确认密码
         check_password2: function () {
             if (this.password != this.password2) {
-
-                this.error_password2 = true;
+                this.error_check_password = true;
             } else {
-
-                this.error_password2 = false;
-
+                this.error_check_password = false;
             }
         },
         // 检查手机号
@@ -95,9 +112,28 @@ var vm = new Vue({
             if (re.test(this.mobile)) {
                 this.error_mobile = false;
             } else {
-
-                this.error_mobile = true;
+                this.error_mobile_message = '您输入的手机号格式不正确';
+                this.error_phone = true;
             }
+
+
+
+             //    在这里发送一个axios 请求
+        //    1.组织url
+            let url = '/mobile/'+this.mobile+'/count/';
+        //    2.发送请求
+            axios.get(url).then(response=>{
+                //    3.请求成功的回调的业务逻辑
+                // console.log(response)
+                if(response.data.count == 0){
+                    this.error_mobile=false
+                }else{
+                    this.error_mobile=true;
+                    this.error_mobile_message='手机号已注册';
+                }
+            }).catch(error=>{
+
+            })
 
         },
         // 检查图片验证码
@@ -186,7 +222,7 @@ var vm = new Vue({
                 })
         },
         // 表单提交
-        on_submit() {
+        on_submit(){
             this.check_username();
             this.check_password();
             this.check_password2();

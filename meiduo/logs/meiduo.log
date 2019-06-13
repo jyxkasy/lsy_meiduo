@@ -619,3 +619,162 @@ WARNING 2019-06-12 12:44:37,521 basehttp 124 "GET / HTTP/1.1" 404 2263
 INFO 2019-06-12 12:45:06,377 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
 INFO 2019-06-12 12:45:06,385 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
 INFO 2019-06-12 12:45:06,387 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,699 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:04:44,762 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,774 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,779 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,780 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,780 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,788 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,793 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,795 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9433
+INFO 2019-06-13 06:04:44,796 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,808 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,812 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:04:44,813 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,103 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:05:22,129 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,131 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,136 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,137 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,137 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,142 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,146 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,150 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 8463
+INFO 2019-06-13 06:05:22,159 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,177 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,178 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:22,180 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:05:23,095 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:05:23,110 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2019-06-13 06:05:26,636 base 152 Not Found: /usernames/bnjiiii/count/
+WARNING 2019-06-13 06:05:26,639 basehttp 124 "GET /usernames/bnjiiii/count/ HTTP/1.1" 404 2353
+WARNING 2019-06-13 06:05:35,974 base 152 Not Found: /usernames/bnjiiii/count/
+WARNING 2019-06-13 06:05:35,974 basehttp 124 "GET /usernames/bnjiiii/count/ HTTP/1.1" 404 2353
+ERROR 2019-06-13 06:05:35,999 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 41, in post
+    return http.JsonResponse()
+TypeError: __init__() missing 1 required positional argument: 'data'
+ERROR 2019-06-13 06:05:36,035 basehttp 124 "POST /register/ HTTP/1.1" 500 84554
+WARNING 2019-06-13 06:09:00,594 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+INFO 2019-06-13 06:11:15,456 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:11:15,477 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,478 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,483 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,485 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,488 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,489 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,490 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 8463
+INFO 2019-06-13 06:11:15,513 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,514 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,555 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,555 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:11:15,557 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+WARNING 2019-06-13 06:11:23,619 base 152 Not Found: /usernames/liushiyu/count/
+WARNING 2019-06-13 06:11:23,620 basehttp 124 "GET /usernames/liushiyu/count/ HTTP/1.1" 404 2356
+INFO 2019-06-13 06:11:36,285 basehttp 124 "POST /register/ HTTP/1.1" 200 12
+INFO 2019-06-13 06:11:41,916 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+WARNING 2019-06-13 06:20:18,762 base 152 Not Found: /usernames//count/
+WARNING 2019-06-13 06:20:18,763 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2536
+WARNING 2019-06-13 06:20:24,175 base 152 Not Found: /usernames/123123/count/
+WARNING 2019-06-13 06:20:24,175 basehttp 124 "GET /usernames/123123/count/ HTTP/1.1" 404 2554
+INFO 2019-06-13 06:20:32,877 basehttp 124 "POST /register/ HTTP/1.1" 200 4996
+INFO 2019-06-13 06:20:32,938 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:21:08,375 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+WARNING 2019-06-13 06:21:13,953 base 152 Not Found: /usernames/123123/count/
+WARNING 2019-06-13 06:21:13,953 basehttp 124 "GET /usernames/123123/count/ HTTP/1.1" 404 2554
+WARNING 2019-06-13 06:21:40,041 base 152 Not Found: /usernames/liushiyu/count/
+WARNING 2019-06-13 06:21:40,041 basehttp 124 "GET /usernames/liushiyu/count/ HTTP/1.1" 404 2560
+WARNING 2019-06-13 06:22:36,542 base 152 Not Found: /usernames/liushiyu/count/
+WARNING 2019-06-13 06:22:36,542 basehttp 124 "GET /usernames/liushiyu/count/ HTTP/1.1" 404 2582
+WARNING 2019-06-13 06:23:02,006 base 152 Not Found: /usernames/liushiyu /count/
+WARNING 2019-06-13 06:23:02,007 basehttp 124 "GET /usernames/liushiyu%20/count/ HTTP/1.1" 404 2587
+WARNING 2019-06-13 06:24:20,417 base 152 Not Found: /usernames/123123/count/
+WARNING 2019-06-13 06:24:20,418 basehttp 124 "GET /usernames/123123/count/ HTTP/1.1" 404 2576
+INFO 2019-06-13 06:24:57,422 basehttp 124 "GET /usernames/1231231/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:25:57,639 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:25:57,723 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,724 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,726 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,730 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,736 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,737 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,740 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,904 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,904 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,956 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,968 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:25:57,968 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:26:00,522 basehttp 124 "GET /usernames/1231231/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:26:00,531 basehttp 124 "GET /usernames/1231231/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:26:11,007 basehttp 124 "GET /usernames/1231231/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:31:03,452 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:31:03,497 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,500 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,504 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,504 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,505 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,511 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,511 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9068
+INFO 2019-06-13 06:31:03,582 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,582 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,605 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,609 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:03,611 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:12,096 basehttp 124 "GET /mobile/13456789986/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:31:54,042 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:31:54,076 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,079 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,081 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,083 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,089 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,091 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,091 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9068
+INFO 2019-06-13 06:31:54,190 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,191 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,277 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,279 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:54,279 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:31:58,017 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:32:10,999 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:33:30,125 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:33:30,154 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:33:30,193 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,195 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,196 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,197 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,199 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,200 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,203 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,286 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,290 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,309 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,311 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:30,315 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:33:34,372 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:35:03,574 basehttp 124 "GET /register/ HTTP/1.1" 200 4890
+INFO 2019-06-13 06:35:03,600 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
+INFO 2019-06-13 06:35:03,645 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,647 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,648 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,650 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,658 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,659 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,661 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9068
+INFO 2019-06-13 06:35:03,742 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,743 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,761 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,766 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:03,769 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-13 06:35:06,682 basehttp 124 "GET /mobile/13456789095/count/ HTTP/1.1" 200 23
