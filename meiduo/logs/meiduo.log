@@ -3518,3 +3518,316 @@ INFO 2019-06-13 13:30:30,934 basehttp 124 "GET /static/images/icons.png HTTP/1.1
 INFO 2019-06-13 13:30:31,070 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
 WARNING 2019-06-13 13:30:31,095 base 152 Not Found: /carts/simple/
 WARNING 2019-06-13 13:30:31,095 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 2961
+INFO 2019-06-14 02:34:21,624 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 02:34:21,663 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-06-14 02:34:21,673 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-06-14 02:34:21,678 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2019-06-14 02:34:21,681 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2019-06-14 02:34:21,690 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2019-06-14 02:34:21,693 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-06-14 02:34:21,695 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2019-06-14 02:34:21,697 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9125
+INFO 2019-06-14 02:34:21,725 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2019-06-14 02:34:21,726 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2019-06-14 02:34:21,727 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2019-06-14 02:34:21,914 basehttp 124 "GET /image_codes/e1b066ba-156f-45ff-9a1f-e19c59f491fe/ HTTP/1.1" 200 3274
+INFO 2019-06-14 02:34:21,941 basehttp 124 "GET /image_codes/e1b066ba-156f-45ff-9a1f-e19c59f491fe/ HTTP/1.1" 200 3195
+WARNING 2019-06-14 02:34:21,961 base 152 Not Found: /favicon.ico
+WARNING 2019-06-14 02:34:21,962 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2955
+INFO 2019-06-14 02:34:26,312 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 02:34:55,354 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 02:34:55,355 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 2973
+INFO 2019-06-14 02:35:24,742 basehttp 124 "GET /usernames/bnjiiii/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 02:35:31,633 basehttp 124 "GET /usernames/bnjiiii/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 02:35:31,732 basehttp 124 "GET /image_codes/a7620d2a-55a8-4e56-8745-f6f7f6defbc1/ HTTP/1.1" 200 3383
+INFO 2019-06-14 02:35:31,740 basehttp 124 "GET /image_codes/a7620d2a-55a8-4e56-8745-f6f7f6defbc1/ HTTP/1.1" 200 3137
+INFO 2019-06-14 02:35:32,329 basehttp 124 "GET /image_codes/2b36f991-963a-4228-bb78-aeb97501a021/ HTTP/1.1" 200 3903
+INFO 2019-06-14 02:35:32,343 basehttp 124 "GET /image_codes/2b36f991-963a-4228-bb78-aeb97501a021/ HTTP/1.1" 200 3259
+INFO 2019-06-14 02:35:35,033 basehttp 124 "GET /usernames/bnjiiii/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 02:35:35,034 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:45:41,126 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 07:45:41,157 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-14 07:45:41,242 basehttp 124 "GET /image_codes/ee63b427-6fc7-4043-9aec-452e25681ff7/ HTTP/1.1" 200 3557
+INFO 2019-06-14 07:45:41,258 basehttp 124 "GET /image_codes/ee63b427-6fc7-4043-9aec-452e25681ff7/ HTTP/1.1" 200 3183
+INFO 2019-06-14 07:45:48,979 basehttp 124 "GET /usernames/A181202969/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:46:18,429 basehttp 124 "GET /mobile/19090909090/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:46:18,541 basehttp 124 "GET /image_codes/f5cde7d4-3d3b-49bc-b56e-a6445390b472/ HTTP/1.1" 200 2917
+INFO 2019-06-14 07:46:18,553 basehttp 124 "GET /image_codes/f5cde7d4-3d3b-49bc-b56e-a6445390b472/ HTTP/1.1" 200 2795
+INFO 2019-06-14 07:46:19,655 basehttp 124 "GET /image_codes/cdddd608-c460-4923-9a3d-4910f415d5bf/ HTTP/1.1" 200 3345
+INFO 2019-06-14 07:46:19,665 basehttp 124 "GET /image_codes/cdddd608-c460-4923-9a3d-4910f415d5bf/ HTTP/1.1" 200 3240
+WARNING 2019-06-14 07:46:30,661 base 152 Not Found: /sms_codes/19090909090/
+WARNING 2019-06-14 07:46:30,662 basehttp 124 "GET /sms_codes/19090909090/?image_code=loc8&image_code_id=cdddd608-c460-4923-9a3d-4910f415d5bf HTTP/1.1" 404 3278
+INFO 2019-06-14 07:46:30,671 basehttp 124 "GET /mobile/19090909090/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 07:46:34,075 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+WARNING 2019-06-14 07:46:39,589 base 152 Not Found: /sms_codes/19090909090/
+WARNING 2019-06-14 07:46:39,590 basehttp 124 "GET /sms_codes/19090909090/?image_code=loc8&image_code_id=cdddd608-c460-4923-9a3d-4910f415d5bf HTTP/1.1" 404 3278
+INFO 2019-06-14 07:46:39,597 basehttp 124 "GET /mobile/19090909090/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:49:06,317 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 07:49:06,401 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 07:49:06,472 basehttp 124 "GET /image_codes/f0d11d9e-4d59-4226-9703-4fc533821528/ HTTP/1.1" 200 3433
+INFO 2019-06-14 07:49:06,498 basehttp 124 "GET /image_codes/f0d11d9e-4d59-4226-9703-4fc533821528/ HTTP/1.1" 200 3433
+INFO 2019-06-14 07:49:26,655 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:49:34,435 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 07:50:10,400 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 07:50:10,407 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 3193
+INFO 2019-06-14 07:50:10,417 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:50:20,160 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 07:50:20,213 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 07:50:20,263 basehttp 124 "GET /image_codes/e517e306-945d-4f3a-a13a-b33ec5545297/ HTTP/1.1" 200 3135
+INFO 2019-06-14 07:50:20,283 basehttp 124 "GET /image_codes/e517e306-945d-4f3a-a13a-b33ec5545297/ HTTP/1.1" 200 3086
+INFO 2019-06-14 07:51:33,026 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:51:40,706 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 07:52:03,819 basehttp 124 "GET /image_codes/287573fd-556f-4651-8a9b-8d337d86ebd8/ HTTP/1.1" 200 2680
+INFO 2019-06-14 07:52:03,836 basehttp 124 "GET /image_codes/287573fd-556f-4651-8a9b-8d337d86ebd8/ HTTP/1.1" 200 3260
+INFO 2019-06-14 07:52:13,879 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:11:05,682 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:11:05,789 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:11:05,944 basehttp 124 "GET /image_codes/5963d218-037d-47b1-b638-9a1c617e7153/ HTTP/1.1" 200 3338
+INFO 2019-06-14 08:11:05,967 basehttp 124 "GET /image_codes/5963d218-037d-47b1-b638-9a1c617e7153/ HTTP/1.1" 200 3071
+INFO 2019-06-14 08:11:25,768 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:11:25,829 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:11:25,873 basehttp 124 "GET /image_codes/06094943-b208-4d71-ad85-5191848071ba/ HTTP/1.1" 200 3228
+INFO 2019-06-14 08:11:25,896 basehttp 124 "GET /image_codes/06094943-b208-4d71-ad85-5191848071ba/ HTTP/1.1" 200 2829
+INFO 2019-06-14 08:11:35,970 basehttp 124 "GET /mobile/27600774292/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:11:48,077 basehttp 124 "GET /mobile/27600774292/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:12:20,324 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:12:20,387 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:12:20,421 basehttp 124 "GET /image_codes/fcc93d52-f942-4acd-84c6-840099ec5a86/ HTTP/1.1" 200 2808
+INFO 2019-06-14 08:12:20,442 basehttp 124 "GET /image_codes/fcc93d52-f942-4acd-84c6-840099ec5a86/ HTTP/1.1" 200 3193
+WARNING 2019-06-14 08:12:28,506 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 08:12:28,513 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 3193
+WARNING 2019-06-14 08:12:28,515 base 152 Not Found: /mobile//count/
+WARNING 2019-06-14 08:12:28,517 basehttp 124 "GET /mobile//count/ HTTP/1.1" 404 3184
+INFO 2019-06-14 08:12:49,670 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:12:51,618 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:12:51,758 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:14:13,678 basehttp 124 "GET /image_codes/7bad2dbb-1c27-4fe2-9a6a-7bea0c29f33b/ HTTP/1.1" 200 2899
+INFO 2019-06-14 08:14:13,692 basehttp 124 "GET /image_codes/7bad2dbb-1c27-4fe2-9a6a-7bea0c29f33b/ HTTP/1.1" 200 3260
+INFO 2019-06-14 08:14:15,355 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:14:15,425 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:14:15,467 basehttp 124 "GET /image_codes/631af2cc-8314-43b6-8b9d-d81f44307132/ HTTP/1.1" 200 3495
+INFO 2019-06-14 08:14:15,486 basehttp 124 "GET /image_codes/631af2cc-8314-43b6-8b9d-d81f44307132/ HTTP/1.1" 200 3085
+INFO 2019-06-14 08:14:17,768 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:14:17,836 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:14:17,881 basehttp 124 "GET /image_codes/1be68a90-c907-48f7-a71d-3f3aa4ace9d0/ HTTP/1.1" 200 3303
+INFO 2019-06-14 08:14:17,902 basehttp 124 "GET /image_codes/1be68a90-c907-48f7-a71d-3f3aa4ace9d0/ HTTP/1.1" 200 2903
+INFO 2019-06-14 08:14:21,500 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:14:34,786 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:17:33,817 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:17:33,885 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:17:33,927 basehttp 124 "GET /image_codes/9d695f00-55d1-46fe-a535-8773d371aa5d/ HTTP/1.1" 200 2946
+INFO 2019-06-14 08:17:33,948 basehttp 124 "GET /image_codes/9d695f00-55d1-46fe-a535-8773d371aa5d/ HTTP/1.1" 200 3792
+INFO 2019-06-14 08:18:01,708 basehttp 124 "GET /mobile/17600774292/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:18:08,805 basehttp 124 "GET /mobile/17600774292/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 08:18:36,551 exception 135 Internal Server Error: /sms_codes/17600774292/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 110, in get
+    if redis_code.lower() == image_code.decode().lower():
+AttributeError: 'NoneType' object has no attribute 'lower'
+ERROR 2019-06-14 08:18:37,540 basehttp 124 "GET /sms_codes/17600774292/?image_code=dwsn&image_code_id=9d695f00-55d1-46fe-a535-8773d371aa5d HTTP/1.1" 500 86831
+INFO 2019-06-14 08:20:59,723 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:20:59,786 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:20:59,819 basehttp 124 "GET /image_codes/11175496-614c-48e1-83e5-a03c92250006/ HTTP/1.1" 200 3291
+INFO 2019-06-14 08:20:59,844 basehttp 124 "GET /image_codes/11175496-614c-48e1-83e5-a03c92250006/ HTTP/1.1" 200 2686
+INFO 2019-06-14 08:21:02,176 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:21:02,240 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:21:02,259 basehttp 124 "GET /image_codes/b93cfc60-fc7d-4180-bd10-12a3703dc897/ HTTP/1.1" 200 3370
+INFO 2019-06-14 08:21:02,275 basehttp 124 "GET /image_codes/b93cfc60-fc7d-4180-bd10-12a3703dc897/ HTTP/1.1" 200 3242
+INFO 2019-06-14 08:21:05,368 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:21:10,560 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:22:27,898 basehttp 124 "GET /image_codes/3a766878-7b12-4312-9f1f-ce8c9189a349/ HTTP/1.1" 200 3634
+INFO 2019-06-14 08:22:27,909 basehttp 124 "GET /image_codes/3a766878-7b12-4312-9f1f-ce8c9189a349/ HTTP/1.1" 200 3157
+INFO 2019-06-14 08:25:08,444 basehttp 124 "GET /image_codes/947ae009-5636-4ef9-b727-3ca5eb9ecb71/ HTTP/1.1" 200 3419
+INFO 2019-06-14 08:25:18,548 basehttp 124 "GET /image_codes/947ae009-5636-4ef9-b727-3ca5eb9ecb71/ HTTP/1.1" 200 3238
+INFO 2019-06-14 08:28:43,371 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:28:43,461 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:28:51,557 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:28:51,617 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:29:07,673 basehttp 124 "GET /image_codes/adcf357e-2ea5-4ddf-890b-e1ccb54cf3c9/ HTTP/1.1" 200 3083
+INFO 2019-06-14 08:29:07,688 basehttp 124 "GET /image_codes/adcf357e-2ea5-4ddf-890b-e1ccb54cf3c9/ HTTP/1.1" 200 3164
+INFO 2019-06-14 08:29:10,867 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:29:16,372 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:29:20,059 basehttp 124 "GET /image_codes/af3f8879-bfa6-45e1-baa5-ee8562fa42f5/ HTTP/1.1" 200 3263
+INFO 2019-06-14 08:29:20,073 basehttp 124 "GET /image_codes/de529c86-bbde-485b-93db-4e1c71898218/ HTTP/1.1" 200 3375
+ERROR 2019-06-14 08:29:22,785 exception 135 Internal Server Error: /sms_codes/14567766663/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 110, in get
+    if redis_code.lower() != image_code.decode().lower():
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2019-06-14 08:29:23,811 basehttp 124 "GET /sms_codes/14567766663/?image_code=ipp8&image_code_id=adcf357e-2ea5-4ddf-890b-e1ccb54cf3c9 HTTP/1.1" 500 86882
+INFO 2019-06-14 08:30:23,890 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:30:23,987 basehttp 124 "GET /image_codes/f0592c83-7a59-4504-bbe0-530983e2e0ea/ HTTP/1.1" 200 3317
+INFO 2019-06-14 08:30:24,000 basehttp 124 "GET /image_codes/f0592c83-7a59-4504-bbe0-530983e2e0ea/ HTTP/1.1" 200 2836
+INFO 2019-06-14 08:30:30,069 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:30:32,213 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:30:33,580 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:30:45,569 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:30:45,681 basehttp 124 "GET /image_codes/73898508-23f8-4f62-b3ba-f82b9c0c95e3/ HTTP/1.1" 200 3477
+INFO 2019-06-14 08:30:45,694 basehttp 124 "GET /image_codes/73898508-23f8-4f62-b3ba-f82b9c0c95e3/ HTTP/1.1" 200 3195
+INFO 2019-06-14 08:30:53,925 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 08:31:41,938 exception 135 Internal Server Error: /sms_codes/13909090909/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 110, in get
+    if redis_code.lower() != image_code.decode().lower():
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2019-06-14 08:31:42,940 basehttp 124 "GET /sms_codes/13909090909/?image_code=jnum&image_code_id=73898508-23f8-4f62-b3ba-f82b9c0c95e3 HTTP/1.1" 500 86890
+INFO 2019-06-14 08:35:28,883 basehttp 124 "GET /image_codes/03c2bd23-8d52-4323-a20b-7e64ac8640cf/ HTTP/1.1" 200 3098
+INFO 2019-06-14 08:35:28,896 basehttp 124 "GET /image_codes/03c2bd23-8d52-4323-a20b-7e64ac8640cf/ HTTP/1.1" 200 3387
+INFO 2019-06-14 08:35:31,437 basehttp 124 "GET /image_codes/085eeae9-25e3-4c5a-b44b-0b989a3471d1/ HTTP/1.1" 200 2969
+INFO 2019-06-14 08:35:31,449 basehttp 124 "GET /image_codes/085eeae9-25e3-4c5a-b44b-0b989a3471d1/ HTTP/1.1" 200 3227
+WARNING 2019-06-14 08:35:43,626 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 08:35:43,628 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 3193
+INFO 2019-06-14 08:35:43,635 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 08:35:47,352 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 08:35:47,361 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 3193
+INFO 2019-06-14 08:35:47,370 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:35:49,674 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:35:49,730 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:35:49,775 basehttp 124 "GET /image_codes/1dfd0cd3-ddc1-49a7-898c-eca864510b2f/ HTTP/1.1" 200 3012
+INFO 2019-06-14 08:35:49,801 basehttp 124 "GET /image_codes/1dfd0cd3-ddc1-49a7-898c-eca864510b2f/ HTTP/1.1" 200 3088
+INFO 2019-06-14 08:35:53,316 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 08:35:59,043 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 08:35:59,047 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 3193
+INFO 2019-06-14 08:35:59,064 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:37:47,420 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:37:47,481 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:37:47,527 basehttp 124 "GET /image_codes/954a67c2-6e26-4098-8149-0865a566998f/ HTTP/1.1" 200 2801
+INFO 2019-06-14 08:37:47,544 basehttp 124 "GET /image_codes/954a67c2-6e26-4098-8149-0865a566998f/ HTTP/1.1" 200 3221
+INFO 2019-06-14 08:37:47,887 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:37:47,950 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:37:47,984 basehttp 124 "GET /image_codes/ee51dfd7-7ee5-41e2-8a53-6f25ff7d8ba4/ HTTP/1.1" 200 3039
+INFO 2019-06-14 08:37:48,002 basehttp 124 "GET /image_codes/ee51dfd7-7ee5-41e2-8a53-6f25ff7d8ba4/ HTTP/1.1" 200 2651
+WARNING 2019-06-14 08:37:56,298 base 152 Not Found: /mobile//count/
+WARNING 2019-06-14 08:37:56,299 basehttp 124 "GET /mobile//count/ HTTP/1.1" 404 3184
+INFO 2019-06-14 08:45:14,169 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:45:16,992 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:45:17,042 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:45:17,072 basehttp 124 "GET /image_codes/16371207-a427-4141-b93b-7dd2cee4c8a5/ HTTP/1.1" 200 3177
+INFO 2019-06-14 08:45:17,088 basehttp 124 "GET /image_codes/16371207-a427-4141-b93b-7dd2cee4c8a5/ HTTP/1.1" 200 3095
+INFO 2019-06-14 08:45:19,378 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 08:45:26,941 exception 135 Internal Server Error: /sms_codes/14567766663/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 98, in get
+    image_code = request.GET.get('image_code').decode().lower()
+AttributeError: 'str' object has no attribute 'decode'
+INFO 2019-06-14 08:45:27,045 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 08:45:27,061 basehttp 124 "GET /sms_codes/14567766663/?image_code=slog&image_code_id=16371207-a427-4141-b93b-7dd2cee4c8a5 HTTP/1.1" 500 85830
+INFO 2019-06-14 08:45:52,218 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:45:52,269 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:45:52,315 basehttp 124 "GET /image_codes/0ac58428-80af-4be0-8707-d785f2ffecbe/ HTTP/1.1" 200 3008
+INFO 2019-06-14 08:45:52,337 basehttp 124 "GET /image_codes/0ac58428-80af-4be0-8707-d785f2ffecbe/ HTTP/1.1" 200 2959
+INFO 2019-06-14 08:45:54,431 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 08:45:59,626 exception 135 Internal Server Error: /sms_codes/14567766663/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 98, in get
+    image_code = request.GET.get('image_code').decode().lower()
+AttributeError: 'str' object has no attribute 'decode'
+INFO 2019-06-14 08:45:59,686 basehttp 124 "GET /mobile/14567766663/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 08:45:59,750 basehttp 124 "GET /sms_codes/14567766663/?image_code=g7hd&image_code_id=0ac58428-80af-4be0-8707-d785f2ffecbe HTTP/1.1" 500 85830
+INFO 2019-06-14 08:52:26,768 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:52:26,822 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:52:26,853 basehttp 124 "GET /image_codes/a1308a43-3d0e-4e51-a516-0dadfcd7d32c/ HTTP/1.1" 200 3157
+INFO 2019-06-14 08:52:26,876 basehttp 124 "GET /image_codes/a1308a43-3d0e-4e51-a516-0dadfcd7d32c/ HTTP/1.1" 200 2948
+INFO 2019-06-14 08:52:29,628 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:52:36,097 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:53:15,393 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:53:15,446 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:53:15,496 basehttp 124 "GET /image_codes/1a7afb9f-6cb5-4369-8995-608e61655c2c/ HTTP/1.1" 200 3181
+INFO 2019-06-14 08:53:15,512 basehttp 124 "GET /image_codes/1a7afb9f-6cb5-4369-8995-608e61655c2c/ HTTP/1.1" 200 3137
+INFO 2019-06-14 08:53:21,144 basehttp 124 "GET /mobile/13909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:53:37,291 basehttp 124 "GET /mobile/17600774292/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 08:53:37,411 base 152 Not Found: /usernames//count/
+WARNING 2019-06-14 08:53:37,412 basehttp 124 "GET /usernames//count/ HTTP/1.1" 404 3193
+INFO 2019-06-14 08:53:37,420 basehttp 124 "GET /mobile/17600774292/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:53:42,320 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 08:53:42,371 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 08:53:42,432 basehttp 124 "GET /image_codes/9e44570c-6f4c-4d4f-86a3-535f55671bb9/ HTTP/1.1" 200 2903
+INFO 2019-06-14 08:53:42,451 basehttp 124 "GET /image_codes/9e44570c-6f4c-4d4f-86a3-535f55671bb9/ HTTP/1.1" 200 3372
+INFO 2019-06-14 08:53:46,099 basehttp 124 "GET /mobile/17600774292/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 08:53:52,449 basehttp 124 "GET /mobile/17600774292/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:03:11,236 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:03:11,354 basehttp 124 "GET /image_codes/9d3597d6-c2f7-421b-a311-535d6a5690ea/ HTTP/1.1" 200 3417
+INFO 2019-06-14 09:03:11,364 basehttp 124 "GET /image_codes/9d3597d6-c2f7-421b-a311-535d6a5690ea/ HTTP/1.1" 200 3471
+INFO 2019-06-14 09:03:13,917 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:03:13,988 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:03:14,006 basehttp 124 "GET /image_codes/296d6b09-e0ed-4320-bd35-17fb6ff802a6/ HTTP/1.1" 200 3127
+INFO 2019-06-14 09:03:14,022 basehttp 124 "GET /image_codes/296d6b09-e0ed-4320-bd35-17fb6ff802a6/ HTTP/1.1" 200 3052
+INFO 2019-06-14 09:03:17,091 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:03:22,235 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:03:25,863 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:04:25,825 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:04:25,876 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:04:25,903 basehttp 124 "GET /image_codes/ef19659b-71a5-438b-a539-060e8f583fc0/ HTTP/1.1" 200 3633
+INFO 2019-06-14 09:04:25,912 basehttp 124 "GET /image_codes/ef19659b-71a5-438b-a539-060e8f583fc0/ HTTP/1.1" 200 3077
+INFO 2019-06-14 09:04:25,968 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:04:26,017 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:04:26,072 basehttp 124 "GET /image_codes/6f532b71-c342-4d2f-90be-e2db3caa8496/ HTTP/1.1" 200 3372
+INFO 2019-06-14 09:04:26,086 basehttp 124 "GET /image_codes/6f532b71-c342-4d2f-90be-e2db3caa8496/ HTTP/1.1" 200 3025
+INFO 2019-06-14 09:04:26,266 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:04:26,320 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:04:26,373 basehttp 124 "GET /image_codes/cfd46c0c-4319-44de-95c1-c6ed84c62803/ HTTP/1.1" 200 3292
+INFO 2019-06-14 09:04:26,383 basehttp 124 "GET /image_codes/cfd46c0c-4319-44de-95c1-c6ed84c62803/ HTTP/1.1" 200 3390
+INFO 2019-06-14 09:04:26,456 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:04:26,495 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:04:26,517 basehttp 124 "GET /image_codes/b9134868-ebd6-4d14-9646-56fc9d4b7fc4/ HTTP/1.1" 200 3033
+INFO 2019-06-14 09:04:26,525 basehttp 124 "GET /image_codes/b9134868-ebd6-4d14-9646-56fc9d4b7fc4/ HTTP/1.1" 200 3205
+INFO 2019-06-14 09:04:26,618 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:04:26,655 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:04:26,706 basehttp 124 "GET /image_codes/76103d89-11c2-41cc-ba10-3f086f2c3143/ HTTP/1.1" 200 3076
+INFO 2019-06-14 09:04:26,717 basehttp 124 "GET /image_codes/76103d89-11c2-41cc-ba10-3f086f2c3143/ HTTP/1.1" 200 2985
+INFO 2019-06-14 09:04:26,795 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:04:26,840 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:04:26,877 basehttp 124 "GET /image_codes/5082e5d2-67aa-4cb2-8072-9f264ed04926/ HTTP/1.1" 200 3371
+INFO 2019-06-14 09:04:26,895 basehttp 124 "GET /image_codes/5082e5d2-67aa-4cb2-8072-9f264ed04926/ HTTP/1.1" 200 3244
+INFO 2019-06-14 09:04:31,147 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:04:40,031 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23

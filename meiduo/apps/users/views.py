@@ -9,6 +9,8 @@ from django import http
 from django.contrib.auth import login
 import logging
 
+from libs.yuntongxun.sms import CCP
+
 logger = logging.getLogger('django')
 
 
@@ -26,7 +28,7 @@ class Register(View):
 
         # 判断数据
         # 数据是否完整
-        if not all([username, password, password2, mobile,allow]):
+        if not all([username, password, password2, mobile, allow]):
             return http.HttpResponseBadRequest('参数不齐')
         if not re.match(r'[a-zA-Z0-9_]{5,20}', username):
             return http.HttpResponseBadRequest('姓名不符合要求')
@@ -47,14 +49,10 @@ class Register(View):
             logger.error(e)
             return render(request, 'register.html', context={'error_message': '数据库异常'})
 
-
-
         from django.contrib.auth import login
         login(request, user)
 
         return redirect(reverse('contents:contents'))
-
-
 
 
 # 校验用户姓名重复
@@ -91,6 +89,33 @@ class ImageCode(View):
         redis_conn = get_redis_connection('code')
 
         # 保存在redis
-        redis_conn.setex(uuid, 240, text)
+        redis_conn.setex(uuid, 300, text)
         return http.HttpResponse(image, content_type='image/jpeg')
+
+
+class MobileCode(View):
+    def get(self, request, mobile):
+        image_code = request.GET.get('image_code').lower()
+        image_code_id = request.GET.get('image_code_id')
+        # 判断参数是否完整
+        if not all([mobile, image_code, image_code_id]):
+            return http.JsonResponse({'code': 400, 'errmsg': '参数不完整， 请重新输入'})
+
+        # 接受参数 电话号码 图形验证码 uuid
+        # 判断图形验证码是否正确
+        # 获取redis中的数据
+        redis_conn = get_redis_connection('code')
+        redis_code = redis_conn.get(image_code_id).decode().lower()
+        from random import randint
+        if redis_code != image_code:
+            return http.JsonResponse({'code': 400, 'errmsg': '图形验证码不正确'})
+            # 生成短信验证码
+        mobile_code = randint(100000, 999999)
+        # 保存短信验证码
+        redis_conn.setex(mobile, 300, mobile_code)
+        # 发送短信验证码
+        CCP().send_template_sms(mobile, [mobile_code, 5], 1)
+        # 保存短信验证码
+        return http.JsonResponse({'code': '0'})
+        # 防止重复发送验证码
 
