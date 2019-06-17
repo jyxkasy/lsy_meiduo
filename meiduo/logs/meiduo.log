@@ -5225,3 +5225,309 @@ INFO 2019-06-17 06:48:47,104 basehttp 124 "GET /static/images/left_bg.jpg HTTP/1
 INFO 2019-06-17 06:50:43,245 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
 INFO 2019-06-17 06:50:43,249 basehttp 124 "GET /contents/ HTTP/1.1" 302 0
 INFO 2019-06-17 06:50:43,257 basehttp 124 "GET /login/?next=/contents/ HTTP/1.1" 200 3038
+INFO 2019-06-17 09:58:17,614 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2019-06-17 09:58:17,629 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-17 09:58:17,644 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-06-17 09:58:17,651 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2019-06-17 09:58:17,656 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2019-06-17 09:58:17,658 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2019-06-17 09:58:17,661 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2019-06-17 09:58:17,664 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-06-17 09:58:17,665 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-06-17 09:58:17,672 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
+INFO 2019-06-17 09:58:17,696 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2019-06-17 09:58:17,697 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2019-06-17 09:58:17,701 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2019-06-17 09:58:17,858 base 152 Not Found: /favicon.ico
+WARNING 2019-06-17 09:58:17,858 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3869
+INFO 2019-06-17 10:14:18,054 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:14:18,065 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,067 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,069 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,072 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,072 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,075 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,088 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,092 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,093 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,094 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:18,098 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:14:37,828 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:14:38,581 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:14:39,540 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:14:49,167 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:16:38,936 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+WARNING 2019-06-17 10:16:50,285 base 152 Not Found: /index
+WARNING 2019-06-17 10:16:50,286 basehttp 124 "GET /index HTTP/1.1" 404 3854
+INFO 2019-06-17 10:17:11,651 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+WARNING 2019-06-17 10:17:18,179 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 10:19:44,368 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:19:45,219 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:19:45,402 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:19:46,129 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:19:46,308 basehttp 124 "GET /login/ HTTP/1.1" 200 3056
+INFO 2019-06-17 10:25:10,624 basehttp 124 "GET /login/ HTTP/1.1" 200 3039
+INFO 2019-06-17 10:25:10,638 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,639 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,639 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,644 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,645 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,653 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,653 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,657 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,666 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,676 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:25:10,677 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-17 10:26:38,134 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 10:26:39,188 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 10:27:22,139 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+WARNING 2019-06-17 10:28:03,759 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:05:05,358 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 11:05:05,377 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,379 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,384 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,386 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,390 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,394 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,399 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:05:05,408 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2019-06-17 11:05:05,426 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:05:05,631 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:05:05,670 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:19:46,959 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 11:19:46,976 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:46,984 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:46,986 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:46,995 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:46,997 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:46,999 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:47,012 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:19:47,042 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2019-06-17 11:19:47,053 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:20:03,745 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:20:03,783 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:22:39,770 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:22:39,840 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:22:42,057 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 172
+INFO 2019-06-17 11:22:54,903 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 172
+WARNING 2019-06-17 11:26:21,220 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:26:23,583 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 11:26:23,626 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:26:23,642 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:26:23,643 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+WARNING 2019-06-17 11:26:23,655 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:26:24,117 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:26:24,160 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+ERROR 2019-06-17 11:26:26,110 exception 135 Internal Server Error: /qq/login/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/project/lsy_meiduo/meiduo/apps/oauth/views.py", line 17, in get
+    oauth = OAuthQQ(response_type="code", client_id=QQ_CLIENT_ID, client_secret=QQ_CLIENT_SECRET, redirect_uri=QQ_REDIRECT_URI, state='test')
+TypeError: __init__() got an unexpected keyword argument 'response_type'
+ERROR 2019-06-17 11:26:26,247 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 500 85259
+ERROR 2019-06-17 11:26:35,222 exception 135 Internal Server Error: /qq/login/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/project/lsy_meiduo/meiduo/apps/oauth/views.py", line 17, in get
+    oauth = OAuthQQ(response_type="code", client_id=QQ_CLIENT_ID, client_secret=QQ_CLIENT_SECRET, redirect_uri=QQ_REDIRECT_URI, state='test')
+TypeError: __init__() got an unexpected keyword argument 'response_type'
+ERROR 2019-06-17 11:26:35,335 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 500 85259
+INFO 2019-06-17 11:36:08,732 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+INFO 2019-06-17 11:36:12,023 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 11:36:12,032 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+WARNING 2019-06-17 11:36:12,053 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:25,638 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 11:36:25,656 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:36:25,657 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:36:25,657 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:36:25,657 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:36:25,660 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 11:36:25,677 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2019-06-17 11:36:25,701 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:26,142 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:36:26,192 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:26,338 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:36:26,384 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:26,523 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:36:26,602 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:26,665 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:36:26,718 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:26,808 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:36:26,859 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:36:33,633 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+WARNING 2019-06-17 11:37:36,995 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:37:39,185 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:37:39,260 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:37:39,378 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+WARNING 2019-06-17 11:37:39,441 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:37:42,441 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+WARNING 2019-06-17 11:38:08,921 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:41:36,703 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+WARNING 2019-06-17 11:44:43,074 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:44:45,694 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 11:44:45,759 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:44:45,769 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-17 11:44:45,783 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+WARNING 2019-06-17 11:44:45,822 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 11:44:47,334 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+WARNING 2019-06-17 11:49:22,689 base 152 Not Found: /oauth_callback
+WARNING 2019-06-17 11:49:22,690 basehttp 124 "GET /oauth_callback?code=12FA6A111E8909894E8124C5B04598EB&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 404 3964
+INFO 2019-06-17 11:52:45,651 basehttp 124 "GET /oauth_callback?code=C9C926FD52CB5CE488382270C0AAB19B&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+INFO 2019-06-17 11:52:45,660 basehttp 124 "GET /oauth_callback/?code=C9C926FD52CB5CE488382270C0AAB19B&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 200 32
+INFO 2019-06-17 12:02:59,354 basehttp 124 "GET /oauth_callback?code=E8AB965608EE4A2995C7C6FBF3E52EC0&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+INFO 2019-06-17 12:03:00,061 basehttp 124 "GET /oauth_callback/?code=E8AB965608EE4A2995C7C6FBF3E52EC0&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 200 32
+WARNING 2019-06-17 12:29:04,481 base 152 Not Found: /
+WARNING 2019-06-17 12:29:04,482 basehttp 124 "GET / HTTP/1.1" 404 4177
+INFO 2019-06-17 12:29:15,183 basehttp 124 "GET /login HTTP/1.1" 301 0
+INFO 2019-06-17 12:29:15,192 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 12:29:15,207 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-06-17 12:29:15,209 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2019-06-17 12:29:15,212 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2019-06-17 12:29:15,213 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2019-06-17 12:29:15,214 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-06-17 12:29:15,215 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-06-17 12:29:15,218 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
+INFO 2019-06-17 12:29:15,219 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2019-06-17 12:29:15,240 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2019-06-17 12:29:15,240 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2019-06-17 12:29:15,241 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2019-06-17 12:29:24,057 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+INFO 2019-06-17 12:30:24,886 basehttp 124 "GET /oauth_callback?code=C7F52AFD425A0D0D9FD6EF3CD218E5CF&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+WARNING 2019-06-17 12:30:25,519 basehttp 124 "GET /oauth_callback/?code=C7F52AFD425A0D0D9FD6EF3CD218E5CF&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 400 15
+INFO 2019-06-17 12:39:26,146 basehttp 124 "GET /login/ HTTP/1.1" 200 3057
+INFO 2019-06-17 12:39:27,770 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+INFO 2019-06-17 12:39:35,951 basehttp 124 "GET /oauth_callback?code=27607DFB112D75BB6B32BDB2F72F00D1&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+WARNING 2019-06-17 12:39:36,591 basehttp 124 "GET /oauth_callback/?code=27607DFB112D75BB6B32BDB2F72F00D1&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 400 15
+INFO 2019-06-17 12:40:17,456 basehttp 124 "GET /oauth_callback?code=1CF7E2FDAFCA2CCA16FD4071DAF7F794&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+WARNING 2019-06-17 12:41:47,402 csrf 160 Forbidden (CSRF token missing or incorrect.): /oauth_callback/
+WARNING 2019-06-17 12:41:47,421 basehttp 124 "POST /oauth_callback/?code=1CF7E2FDAFCA2CCA16FD4071DAF7F794&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 403 2502
+INFO 2019-06-17 12:41:52,597 basehttp 124 "GET /qq/login/?next=/ HTTP/1.1" 200 196
+INFO 2019-06-17 12:42:01,031 basehttp 124 "GET /oauth_callback?code=0AC588720681453E9B7DEA946918E697&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+INFO 2019-06-17 12:42:09,827 basehttp 124 "GET /oauth_callback/?code=0AC588720681453E9B7DEA946918E697&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 302 0
+ERROR 2019-06-17 12:42:09,834 exception 135 Internal Server Error: /openid_callback/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.OpenidCallback didn't return an HttpResponse object. It returned None instead.
+ERROR 2019-06-17 12:42:09,969 basehttp 124 "GET /openid_callback/ HTTP/1.1" 500 66405
+INFO 2019-06-17 12:44:22,512 basehttp 124 "GET /oauth_callback?code=3A9D7FDFFE04A55A51EE45C953CCCC59&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+INFO 2019-06-17 12:44:33,693 basehttp 124 "GET /oauth_callback/?code=3A9D7FDFFE04A55A51EE45C953CCCC59&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 302 0
+ERROR 2019-06-17 12:44:33,697 exception 135 Internal Server Error: /openid_callback/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.OpenidCallback didn't return an HttpResponse object. It returned None instead.
+ERROR 2019-06-17 12:44:33,795 basehttp 124 "GET /openid_callback/ HTTP/1.1" 500 66405
+INFO 2019-06-17 12:47:00,566 basehttp 124 "GET /oauth_callback?code=2B491F65EBB52E648A3CC7261B150C25&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+INFO 2019-06-17 12:47:05,026 basehttp 124 "GET /oauth_callback/?code=2B491F65EBB52E648A3CC7261B150C25&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 302 0
+ERROR 2019-06-17 12:47:05,030 exception 135 Internal Server Error: /openid_callback/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.OpenidCallback didn't return an HttpResponse object. It returned None instead.
+ERROR 2019-06-17 12:47:05,131 basehttp 124 "GET /openid_callback/ HTTP/1.1" 500 66405
+INFO 2019-06-17 12:49:16,846 basehttp 124 "GET /oauth_callback?code=59F3B2EEE4A01395CB16911EADE99502&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 301 0
+INFO 2019-06-17 12:49:19,917 basehttp 124 "GET /oauth_callback/?code=59F3B2EEE4A01395CB16911EADE99502&state=%3Cbuilt-in%2Bfunction%2Bnext%3E HTTP/1.1" 200 4115
+INFO 2019-06-17 12:49:19,958 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 12:49:19,958 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-17 12:49:19,965 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 12:49:19,968 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 12:49:19,974 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 12:49:19,975 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 12:49:19,983 basehttp 124 "GET /static/js/oauth_callback.js HTTP/1.1" 200 3904
+INFO 2019-06-17 12:49:19,997 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2019-06-17 12:49:19,998 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+ERROR 2019-06-17 12:49:20,112 exception 135 Internal Server Error: /image_codes/8ad07667-9464-4e15-b63f-11bd98317fa4/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/project/lsy_meiduo/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 12:49:20,278 basehttp 124 "GET /image_codes/8ad07667-9464-4e15-b63f-11bd98317fa4/ HTTP/1.1" 500 122952
+ERROR 2019-06-17 12:50:51,610 exception 135 Internal Server Error: /image_codes/c491520d-a5d8-4699-9b4f-319fd2dd737f/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/project/lsy_meiduo/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 12:50:51,754 basehttp 124 "GET /image_codes/c491520d-a5d8-4699-9b4f-319fd2dd737f/ HTTP/1.1" 500 122990
