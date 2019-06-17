@@ -3,5 +3,5 @@ from apps.contents import views
 
 urlpatterns = [
 
-    url(r'^contents/', views.IndexView.as_view(), name='contents')
+    url(r'^contents/', views.IndexView.as_view(), name='index')
 ]

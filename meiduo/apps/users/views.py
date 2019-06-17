@@ -104,18 +104,40 @@ class MobileCode(View):
         # 接受参数 电话号码 图形验证码 uuid
         # 判断图形验证码是否正确
         # 获取redis中的数据
-        redis_conn = get_redis_connection('code')
-        redis_code = redis_conn.get(image_code_id).decode().lower()
+        try:
+            redis_conn = get_redis_connection('code')
+            redis_code = redis_conn.get(image_code_id).decode().lower()
+        except Exception as e:
+            return http.JsonResponse({'code': 400, 'errmsg': 'redis错误'})
+
+        # if redis_code == None:
+        #     return http.JsonResponse({'code':400, 'errmsg':'没有图片验证码'})
         from random import randint
+        # 创建redis查询合并对象
+        pl = redis_conn.pipeline()
+        # 判断图形验证码是否正确
         if redis_code != image_code:
             return http.JsonResponse({'code': 400, 'errmsg': '图形验证码不正确'})
-            # 生成短信验证码
+        # 判断电话号码是否存在
+        redis_count_mobile = redis_conn.get(mobile)
+        if redis_count_mobile:
+            return http.JsonResponse({'code': '4001', 'errmsg': '操作频繁'})
+
+
+
+        # 生成短信验证码
         mobile_code = randint(100000, 999999)
         # 保存短信验证码
-        redis_conn.setex(mobile, 300, mobile_code)
+        # 创建redis管道
+        pl = redis_conn.pipeline()
+        # 把redis操作加入缓存
+        pl.setex(mobile, 300, mobile_code)
+        pl.setex(mobile, 300, 1)
+        # 执行缓存中的命领
+        pl.execute()
+
         # 发送短信验证码
         CCP().send_template_sms(mobile, [mobile_code, 5], 1)
         # 保存短信验证码
         return http.JsonResponse({'code': '0'})
         # 防止重复发送验证码
-

@@ -3831,3 +3831,1397 @@ INFO 2019-06-14 09:04:26,877 basehttp 124 "GET /image_codes/5082e5d2-67aa-4cb2-8
 INFO 2019-06-14 09:04:26,895 basehttp 124 "GET /image_codes/5082e5d2-67aa-4cb2-8072-9f264ed04926/ HTTP/1.1" 200 3244
 INFO 2019-06-14 09:04:31,147 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
 INFO 2019-06-14 09:04:40,031 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:29:41,727 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 09:29:41,743 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,743 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,748 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,749 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,758 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,759 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,771 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,779 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,786 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-14 09:29:41,787 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+WARNING 2019-06-14 09:29:41,796 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:29:41,843 basehttp 124 "GET /image_codes/23749bd9-ce5e-47bd-a3eb-827b5a537ea5/ HTTP/1.1" 200 3368
+INFO 2019-06-14 09:29:41,853 basehttp 124 "GET /image_codes/23749bd9-ce5e-47bd-a3eb-827b5a537ea5/ HTTP/1.1" 200 3163
+INFO 2019-06-14 09:29:50,075 basehttp 124 "GET /mobile/14545454545/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 09:30:44,313 exception 135 Internal Server Error: /sms_codes/14545454545/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 121, in get
+    if redis_count_mobile():
+TypeError: 'NoneType' object is not callable
+ERROR 2019-06-14 09:30:44,348 basehttp 124 "GET /sms_codes/14545454545/?image_code=ntuc&image_code_id=23749bd9-ce5e-47bd-a3eb-827b5a537ea5 HTTP/1.1" 500 85020
+INFO 2019-06-14 09:30:44,350 basehttp 124 "GET /mobile/14545454545/count/ HTTP/1.1" 200 23
+ERROR 2019-06-14 09:30:49,346 exception 135 Internal Server Error: /sms_codes/14545454545/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 121, in get
+    if redis_count_mobile():
+TypeError: 'NoneType' object is not callable
+ERROR 2019-06-14 09:30:49,377 basehttp 124 "GET /sms_codes/14545454545/?image_code=ntuc&image_code_id=23749bd9-ce5e-47bd-a3eb-827b5a537ea5 HTTP/1.1" 500 85020
+INFO 2019-06-14 09:30:49,382 basehttp 124 "GET /mobile/14545454545/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:30:51,326 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:30:51,387 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:30:51,421 basehttp 124 "GET /image_codes/9d7332ee-9ce4-4f1d-9417-7560d3fe72af/ HTTP/1.1" 200 2393
+INFO 2019-06-14 09:30:51,435 basehttp 124 "GET /image_codes/9d7332ee-9ce4-4f1d-9417-7560d3fe72af/ HTTP/1.1" 200 3004
+INFO 2019-06-14 09:31:04,629 basehttp 124 "GET /mobile/16767676767/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:31:05,895 basehttp 124 "GET /image_codes/0e1c6885-8018-4766-8722-643590d5af5b/ HTTP/1.1" 200 3431
+INFO 2019-06-14 09:31:05,906 basehttp 124 "GET /image_codes/0e1c6885-8018-4766-8722-643590d5af5b/ HTTP/1.1" 200 3188
+INFO 2019-06-14 09:31:08,347 basehttp 124 "GET /image_codes/7c326439-11eb-4ea9-aa72-9274ddeb3b8c/ HTTP/1.1" 200 2816
+INFO 2019-06-14 09:31:08,357 basehttp 124 "GET /image_codes/7c326439-11eb-4ea9-aa72-9274ddeb3b8c/ HTTP/1.1" 200 3337
+INFO 2019-06-14 09:31:09,346 basehttp 124 "GET /image_codes/ddcae2bb-29e1-4b69-8edc-174fc8e127b9/ HTTP/1.1" 200 3038
+INFO 2019-06-14 09:31:09,356 basehttp 124 "GET /image_codes/ddcae2bb-29e1-4b69-8edc-174fc8e127b9/ HTTP/1.1" 200 3507
+INFO 2019-06-14 09:31:22,757 basehttp 124 "GET /mobile/16767676767/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:31:37,969 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:31:38,014 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:31:38,076 basehttp 124 "GET /image_codes/04a79a76-22bd-4655-8ae3-408589104f5c/ HTTP/1.1" 200 3300
+INFO 2019-06-14 09:31:38,090 basehttp 124 "GET /image_codes/04a79a76-22bd-4655-8ae3-408589104f5c/ HTTP/1.1" 200 3144
+INFO 2019-06-14 09:31:40,755 basehttp 124 "GET /mobile/16767676767/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:31:45,759 basehttp 124 "GET /mobile/16767676767/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:34:30,738 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:34:30,779 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:34:30,830 basehttp 124 "GET /image_codes/c1fdfe78-bea6-4d3d-8f2e-402a53572b85/ HTTP/1.1" 200 3073
+INFO 2019-06-14 09:34:30,843 basehttp 124 "GET /image_codes/c1fdfe78-bea6-4d3d-8f2e-402a53572b85/ HTTP/1.1" 200 3429
+INFO 2019-06-14 09:34:35,908 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:34:36,040 basehttp 124 "GET /image_codes/54e97ce9-9186-499c-9874-cf8fd75e29f0/ HTTP/1.1" 200 3175
+INFO 2019-06-14 09:34:36,056 basehttp 124 "GET /image_codes/54e97ce9-9186-499c-9874-cf8fd75e29f0/ HTTP/1.1" 200 2965
+INFO 2019-06-14 09:34:53,897 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:34:59,783 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:34:59,829 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:34:59,879 basehttp 124 "GET /image_codes/7a9c3e25-3666-439e-bddd-f0ad936b9a89/ HTTP/1.1" 200 3038
+INFO 2019-06-14 09:34:59,897 basehttp 124 "GET /image_codes/7a9c3e25-3666-439e-bddd-f0ad936b9a89/ HTTP/1.1" 200 2992
+INFO 2019-06-14 09:35:03,218 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:35:12,922 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:36:50,361 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:36:50,417 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:36:50,449 basehttp 124 "GET /image_codes/e5c6d5ef-b247-4cae-98cb-2e79e75384ca/ HTTP/1.1" 200 2998
+INFO 2019-06-14 09:36:50,461 basehttp 124 "GET /image_codes/e5c6d5ef-b247-4cae-98cb-2e79e75384ca/ HTTP/1.1" 200 3375
+INFO 2019-06-14 09:37:06,155 basehttp 124 "GET /mobile/18989898989/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:37:11,411 basehttp 124 "GET /mobile/18989898989/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:37:33,907 basehttp 124 "GET /sms_codes/18989898989/?image_code=3wem&image_code_id=e5c6d5ef-b247-4cae-98cb-2e79e75384ca HTTP/1.1" 200 13
+INFO 2019-06-14 09:37:46,639 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-14 09:37:46,692 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-14 09:37:46,711 basehttp 124 "GET /image_codes/6ebadeaa-8033-4018-8373-ae9c4d70b81e/ HTTP/1.1" 200 2807
+INFO 2019-06-14 09:37:46,732 basehttp 124 "GET /image_codes/6ebadeaa-8033-4018-8373-ae9c4d70b81e/ HTTP/1.1" 200 2930
+INFO 2019-06-14 09:38:00,640 basehttp 124 "GET /mobile/18989898989/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:38:08,216 basehttp 124 "GET /mobile/18989898989/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 09:38:11,008 basehttp 124 "GET /sms_codes/18989898989/?image_code=ebp8&image_code_id=6ebadeaa-8033-4018-8373-ae9c4d70b81e HTTP/1.1" 200 54
+INFO 2019-06-14 09:38:11,028 basehttp 124 "GET /image_codes/ba742141-5b9c-4349-a8e3-d2d59b0c95d4/ HTTP/1.1" 200 3217
+INFO 2019-06-14 09:38:11,043 basehttp 124 "GET /image_codes/ba742141-5b9c-4349-a8e3-d2d59b0c95d4/ HTTP/1.1" 200 2947
+INFO 2019-06-14 10:32:11,627 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 10:32:11,682 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-14 10:32:11,731 basehttp 124 "GET /image_codes/ce66efde-a32a-41e0-afd5-d9d35f90bc8b/ HTTP/1.1" 200 3132
+INFO 2019-06-14 10:32:11,742 basehttp 124 "GET /image_codes/ce66efde-a32a-41e0-afd5-d9d35f90bc8b/ HTTP/1.1" 200 3213
+WARNING 2019-06-14 10:32:11,851 base 152 Not Found: /favicon.ico
+WARNING 2019-06-14 10:32:11,851 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3175
+INFO 2019-06-14 10:32:24,303 basehttp 124 "GET /mobile/13555555555/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 10:32:30,176 basehttp 124 "GET /image_codes/8e219de6-8b5b-4ea2-a175-b94ff159fec1/ HTTP/1.1" 200 3019
+INFO 2019-06-14 10:32:30,185 basehttp 124 "GET /image_codes/8e219de6-8b5b-4ea2-a175-b94ff159fec1/ HTTP/1.1" 200 3278
+INFO 2019-06-14 10:32:32,446 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 10:32:32,489 basehttp 124 "GET /image_codes/c20b0cfc-5de5-440b-aa32-681d6918326c/ HTTP/1.1" 200 3070
+INFO 2019-06-14 10:32:32,500 basehttp 124 "GET /image_codes/c20b0cfc-5de5-440b-aa32-681d6918326c/ HTTP/1.1" 200 3234
+INFO 2019-06-14 11:10:40,206 basehttp 124 "GET /mobile/13999999999/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:10:48,541 basehttp 124 "GET /sms_codes/13999999999/?image_code=xokl&image_code_id=c20b0cfc-5de5-440b-aa32-681d6918326c HTTP/1.1" 200 44
+INFO 2019-06-14 11:10:48,544 basehttp 124 "GET /mobile/13999999999/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:10:48,556 basehttp 124 "GET /image_codes/44ddc73b-00d0-4580-a746-2dcc6345cfc5/ HTTP/1.1" 200 3233
+INFO 2019-06-14 11:10:48,563 basehttp 124 "GET /image_codes/44ddc73b-00d0-4580-a746-2dcc6345cfc5/ HTTP/1.1" 200 3292
+INFO 2019-06-14 11:11:39,661 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:11:39,729 basehttp 124 "GET /image_codes/feed9ead-5b55-4185-abf9-e4682a7e2e42/ HTTP/1.1" 200 3050
+INFO 2019-06-14 11:11:39,737 basehttp 124 "GET /image_codes/feed9ead-5b55-4185-abf9-e4682a7e2e42/ HTTP/1.1" 200 3234
+INFO 2019-06-14 11:11:46,314 basehttp 124 "GET /mobile/1399999999/count/ HTTP/1.1" 200 23
+WARNING 2019-06-14 11:12:02,124 base 152 Not Found: /mobile/12/count/
+WARNING 2019-06-14 11:12:02,124 basehttp 124 "GET /mobile/12/count/ HTTP/1.1" 404 3190
+INFO 2019-06-14 11:12:11,041 basehttp 124 "GET /mobile/1309090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:12:15,053 basehttp 124 "GET /mobile/13090909091/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:12:23,184 basehttp 124 "GET /mobile/13090909091/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:12:27,326 basehttp 124 "GET /sms_codes/13090909091/?image_code=85rm&image_code_id=feed9ead-5b55-4185-abf9-e4682a7e2e42 HTTP/1.1" 200 75
+INFO 2019-06-14 11:12:27,328 basehttp 124 "GET /mobile/13090909091/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:12:27,341 basehttp 124 "GET /image_codes/5101f1f7-2bc4-4342-9e37-8c27b9e60b8c/ HTTP/1.1" 200 3257
+INFO 2019-06-14 11:12:27,350 basehttp 124 "GET /image_codes/5101f1f7-2bc4-4342-9e37-8c27b9e60b8c/ HTTP/1.1" 200 3102
+INFO 2019-06-14 11:12:31,859 basehttp 124 "GET /image_codes/6abc89e2-6685-4c4c-a2db-9506e431021a/ HTTP/1.1" 200 2869
+INFO 2019-06-14 11:12:31,867 basehttp 124 "GET /image_codes/6abc89e2-6685-4c4c-a2db-9506e431021a/ HTTP/1.1" 200 2916
+INFO 2019-06-14 11:12:33,511 basehttp 124 "GET /image_codes/c3b68dd5-9a2a-40ad-b7d4-9a47ed8fafb7/ HTTP/1.1" 200 2917
+INFO 2019-06-14 11:12:33,519 basehttp 124 "GET /image_codes/c3b68dd5-9a2a-40ad-b7d4-9a47ed8fafb7/ HTTP/1.1" 200 3495
+INFO 2019-06-14 11:12:42,006 basehttp 124 "GET /mobile/13090909091/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:12:42,407 basehttp 124 "GET /sms_codes/13090909091/?image_code=6orf&image_code_id=c3b68dd5-9a2a-40ad-b7d4-9a47ed8fafb7 HTTP/1.1" 200 13
+INFO 2019-06-14 11:12:45,479 basehttp 124 "GET /image_codes/f5e6e750-b878-4e7f-9c16-92371beaa3b5/ HTTP/1.1" 200 3287
+INFO 2019-06-14 11:12:45,487 basehttp 124 "GET /image_codes/f5e6e750-b878-4e7f-9c16-92371beaa3b5/ HTTP/1.1" 200 3108
+INFO 2019-06-14 11:12:48,011 basehttp 124 "GET /image_codes/eab05978-ff1e-4720-9cf6-8b6be7328666/ HTTP/1.1" 200 2981
+INFO 2019-06-14 11:12:48,019 basehttp 124 "GET /image_codes/eab05978-ff1e-4720-9cf6-8b6be7328666/ HTTP/1.1" 200 3414
+INFO 2019-06-14 11:13:12,262 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:13:12,326 basehttp 124 "GET /image_codes/2350c28b-c194-4f57-9ded-ffaa6734a614/ HTTP/1.1" 200 3319
+INFO 2019-06-14 11:13:12,335 basehttp 124 "GET /image_codes/2350c28b-c194-4f57-9ded-ffaa6734a614/ HTTP/1.1" 200 3200
+INFO 2019-06-14 11:13:16,659 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:13:17,710 basehttp 124 "GET /image_codes/adb17204-c669-4de0-a57d-57db4571cbb3/ HTTP/1.1" 200 3338
+INFO 2019-06-14 11:13:17,719 basehttp 124 "GET /image_codes/adb17204-c669-4de0-a57d-57db4571cbb3/ HTTP/1.1" 200 3045
+INFO 2019-06-14 11:13:19,877 basehttp 124 "GET /image_codes/e71b4e17-0673-434c-9c7b-cb11bcbe2a8f/ HTTP/1.1" 200 3209
+INFO 2019-06-14 11:13:19,885 basehttp 124 "GET /image_codes/e71b4e17-0673-434c-9c7b-cb11bcbe2a8f/ HTTP/1.1" 200 3642
+INFO 2019-06-14 11:13:21,380 basehttp 124 "GET /image_codes/ba9f73f4-216f-4b82-9d2e-b92aa1092889/ HTTP/1.1" 200 3334
+INFO 2019-06-14 11:13:21,389 basehttp 124 "GET /image_codes/ba9f73f4-216f-4b82-9d2e-b92aa1092889/ HTTP/1.1" 200 3256
+INFO 2019-06-14 11:13:27,915 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:13:40,367 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:13:40,408 basehttp 124 "GET /image_codes/1dd3a477-359c-4dc4-afd6-8676cd934b11/ HTTP/1.1" 200 3336
+INFO 2019-06-14 11:13:40,421 basehttp 124 "GET /image_codes/1dd3a477-359c-4dc4-afd6-8676cd934b11/ HTTP/1.1" 200 3183
+INFO 2019-06-14 11:13:43,374 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:13:51,081 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:13:53,761 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:13:54,723 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:13:55,577 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:14:02,822 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:14:02,910 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:14:03,357 basehttp 124 "GET /sms_codes/19090909091/?image_code=ipu4&image_code_id=1dd3a477-359c-4dc4-afd6-8676cd934b11 HTTP/1.1" 200 13
+WARNING 2019-06-14 11:14:28,585 base 152 Not Found: /mobile/134/count/
+WARNING 2019-06-14 11:14:28,586 basehttp 124 "GET /mobile/134/count/ HTTP/1.1" 404 3193
+INFO 2019-06-14 11:14:34,295 basehttp 124 "GET /mobile/1344567657/count/ HTTP/1.1" 200 23
+INFO 2019-06-14 11:20:23,963 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:20:24,004 basehttp 124 "GET /image_codes/2df647b5-9d2e-440e-82fd-8777347aee2c/ HTTP/1.1" 200 3425
+INFO 2019-06-14 11:20:24,015 basehttp 124 "GET /image_codes/2df647b5-9d2e-440e-82fd-8777347aee2c/ HTTP/1.1" 200 3383
+WARNING 2019-06-14 11:20:28,170 base 152 Not Found: /mobile/12346/count/
+WARNING 2019-06-14 11:20:28,172 basehttp 124 "GET /mobile/12346/count/ HTTP/1.1" 404 3196
+WARNING 2019-06-14 11:20:36,189 base 152 Not Found: /mobile/1346234123/count/
+WARNING 2019-06-14 11:20:36,191 basehttp 124 "GET /mobile/1346234123/count/ HTTP/1.1" 404 3211
+WARNING 2019-06-14 11:20:38,970 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:20:38,972 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:20:44,027 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:20:44,028 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:20:49,739 base 152 Not Found: /sms_codes/13462341232/
+WARNING 2019-06-14 11:20:49,737 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:20:49,740 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:20:49,741 basehttp 124 "GET /sms_codes/13462341232/?image_code=qajx&image_code_id=2df647b5-9d2e-440e-82fd-8777347aee2c HTTP/1.1" 404 3276
+INFO 2019-06-14 11:20:52,019 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:20:52,071 basehttp 124 "GET /image_codes/0d7b201b-47f9-48dd-8f27-d551f29fd804/ HTTP/1.1" 200 2530
+INFO 2019-06-14 11:20:52,080 basehttp 124 "GET /image_codes/0d7b201b-47f9-48dd-8f27-d551f29fd804/ HTTP/1.1" 200 3585
+WARNING 2019-06-14 11:20:55,024 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:20:55,025 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:21:02,267 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:21:02,269 base 152 Not Found: /sms_codes/13462341232/
+WARNING 2019-06-14 11:21:02,270 basehttp 124 "GET /sms_codes/13462341232/?image_code=rwmn&image_code_id=0d7b201b-47f9-48dd-8f27-d551f29fd804 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:21:02,270 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:21:03,056 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:21:03,059 base 152 Not Found: /sms_codes/13462341232/
+WARNING 2019-06-14 11:21:03,060 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:21:03,060 basehttp 124 "GET /sms_codes/13462341232/?image_code=rwmn&image_code_id=0d7b201b-47f9-48dd-8f27-d551f29fd804 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:21:05,562 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:21:05,565 base 152 Not Found: /sms_codes/13462341232/
+WARNING 2019-06-14 11:21:05,565 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:21:05,566 basehttp 124 "GET /sms_codes/13462341232/?image_code=rwmn&image_code_id=0d7b201b-47f9-48dd-8f27-d551f29fd804 HTTP/1.1" 404 3276
+INFO 2019-06-14 11:21:08,263 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:21:08,303 basehttp 124 "GET /image_codes/5a4be07f-702a-4337-b5eb-7fcd0ca0461a/ HTTP/1.1" 200 3570
+INFO 2019-06-14 11:21:08,322 basehttp 124 "GET /image_codes/5a4be07f-702a-4337-b5eb-7fcd0ca0461a/ HTTP/1.1" 200 3018
+WARNING 2019-06-14 11:21:11,431 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:21:11,432 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+INFO 2019-06-14 11:21:15,795 basehttp 124 "GET /image_codes/64c7b3ce-4827-49fc-9362-7f06c07c87c4/ HTTP/1.1" 200 3098
+INFO 2019-06-14 11:21:15,802 basehttp 124 "GET /image_codes/64c7b3ce-4827-49fc-9362-7f06c07c87c4/ HTTP/1.1" 200 3004
+WARNING 2019-06-14 11:21:22,378 base 152 Not Found: /mobile/13462341232/count/
+WARNING 2019-06-14 11:21:22,381 base 152 Not Found: /sms_codes/13462341232/
+WARNING 2019-06-14 11:21:22,382 basehttp 124 "GET /mobile/13462341232/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:21:22,382 basehttp 124 "GET /sms_codes/13462341232/?image_code=putz&image_code_id=64c7b3ce-4827-49fc-9362-7f06c07c87c4 HTTP/1.1" 404 3276
+INFO 2019-06-14 11:23:01,494 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:23:01,548 basehttp 124 "GET /image_codes/2266584e-9c1a-4974-aed4-f60cd52d0b02/ HTTP/1.1" 200 3022
+INFO 2019-06-14 11:23:01,561 basehttp 124 "GET /image_codes/2266584e-9c1a-4974-aed4-f60cd52d0b02/ HTTP/1.1" 200 3084
+WARNING 2019-06-14 11:23:04,084 base 152 Not Found: /mobile/1909090909/count/
+WARNING 2019-06-14 11:23:04,086 basehttp 124 "GET /mobile/1909090909/count/ HTTP/1.1" 404 3211
+INFO 2019-06-14 11:23:07,685 basehttp 124 "GET /image_codes/6e1f8de4-7dc0-4391-b136-3b014f54c989/ HTTP/1.1" 200 3226
+INFO 2019-06-14 11:23:07,696 basehttp 124 "GET /image_codes/6e1f8de4-7dc0-4391-b136-3b014f54c989/ HTTP/1.1" 200 3325
+WARNING 2019-06-14 11:23:19,620 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:19,620 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:19,861 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:19,862 base 152 Not Found: /sms_codes/19090909091/
+WARNING 2019-06-14 11:23:19,863 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:19,863 basehttp 124 "GET /sms_codes/19090909091/?image_code=xhma&image_code_id=6e1f8de4-7dc0-4391-b136-3b014f54c989 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:23:21,200 base 152 Not Found: /sms_codes/19090909091/
+WARNING 2019-06-14 11:23:21,201 basehttp 124 "GET /sms_codes/19090909091/?image_code=xhma&image_code_id=6e1f8de4-7dc0-4391-b136-3b014f54c989 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:23:21,202 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:21,203 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:23,608 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:23,610 base 152 Not Found: /sms_codes/19090909091/
+WARNING 2019-06-14 11:23:23,611 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:23,612 basehttp 124 "GET /sms_codes/19090909091/?image_code=xhma&image_code_id=6e1f8de4-7dc0-4391-b136-3b014f54c989 HTTP/1.1" 404 3276
+INFO 2019-06-14 11:23:28,278 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:23:28,325 basehttp 124 "GET /image_codes/cebbeca9-1b07-452a-89ab-2e83b4039457/ HTTP/1.1" 200 3176
+INFO 2019-06-14 11:23:28,342 basehttp 124 "GET /image_codes/cebbeca9-1b07-452a-89ab-2e83b4039457/ HTTP/1.1" 200 3133
+INFO 2019-06-14 11:23:28,484 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:23:28,535 basehttp 124 "GET /image_codes/33afebc2-fbad-43b8-ac50-eaaff5b2d9b8/ HTTP/1.1" 200 3485
+INFO 2019-06-14 11:23:28,552 basehttp 124 "GET /image_codes/33afebc2-fbad-43b8-ac50-eaaff5b2d9b8/ HTTP/1.1" 200 3194
+INFO 2019-06-14 11:23:28,694 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:23:28,741 basehttp 124 "GET /image_codes/1570a4ab-8790-4dd6-93dc-0c8bb6c2fdb0/ HTTP/1.1" 200 3235
+INFO 2019-06-14 11:23:28,754 basehttp 124 "GET /image_codes/1570a4ab-8790-4dd6-93dc-0c8bb6c2fdb0/ HTTP/1.1" 200 3229
+INFO 2019-06-14 11:23:28,830 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:23:28,871 basehttp 124 "GET /image_codes/ae6dce9c-8155-4041-875d-f844d4497beb/ HTTP/1.1" 200 3057
+INFO 2019-06-14 11:23:28,884 basehttp 124 "GET /image_codes/ae6dce9c-8155-4041-875d-f844d4497beb/ HTTP/1.1" 200 3036
+INFO 2019-06-14 11:23:28,982 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-14 11:23:29,026 basehttp 124 "GET /image_codes/e4f26a97-c67c-4c25-9139-8ffb8769adc6/ HTTP/1.1" 200 2740
+INFO 2019-06-14 11:23:29,040 basehttp 124 "GET /image_codes/e4f26a97-c67c-4c25-9139-8ffb8769adc6/ HTTP/1.1" 200 3458
+WARNING 2019-06-14 11:23:32,822 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:32,823 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:38,244 base 152 Not Found: /sms_codes/19090909091/
+WARNING 2019-06-14 11:23:38,246 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:38,247 basehttp 124 "GET /sms_codes/19090909091/?image_code=ubjj&image_code_id=e4f26a97-c67c-4c25-9139-8ffb8769adc6 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:23:38,248 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:39,030 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:39,037 base 152 Not Found: /sms_codes/19090909091/
+WARNING 2019-06-14 11:23:39,038 basehttp 124 "GET /sms_codes/19090909091/?image_code=ubjj&image_code_id=e4f26a97-c67c-4c25-9139-8ffb8769adc6 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:23:39,039 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-14 11:23:42,684 base 152 Not Found: /mobile/19090909091/count/
+WARNING 2019-06-14 11:23:42,686 base 152 Not Found: /sms_codes/19090909091/
+WARNING 2019-06-14 11:23:42,687 basehttp 124 "GET /sms_codes/19090909091/?image_code=ubjj&image_code_id=e4f26a97-c67c-4c25-9139-8ffb8769adc6 HTTP/1.1" 404 3276
+WARNING 2019-06-14 11:23:42,687 basehttp 124 "GET /mobile/19090909091/count/ HTTP/1.1" 404 3214
+WARNING 2019-06-16 07:24:25,809 base 152 Not Found: /
+WARNING 2019-06-16 07:24:25,812 basehttp 124 "GET / HTTP/1.1" 404 3291
+WARNING 2019-06-16 07:24:25,931 base 152 Not Found: /favicon.ico
+WARNING 2019-06-16 07:24:25,932 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3342
+INFO 2019-06-16 07:24:41,543 basehttp 124 "GET /login HTTP/1.1" 301 0
+WARNING 2019-06-16 07:24:41,553 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:24:41,555 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:24:56,711 base 152 Not Found: /
+WARNING 2019-06-16 07:24:56,712 basehttp 124 "GET / HTTP/1.1" 404 3285
+WARNING 2019-06-16 07:24:56,792 base 152 Not Found: /
+WARNING 2019-06-16 07:24:56,794 basehttp 124 "GET / HTTP/1.1" 404 3285
+WARNING 2019-06-16 07:24:56,909 base 152 Not Found: /favicon.ico
+WARNING 2019-06-16 07:24:56,910 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3336
+INFO 2019-06-16 07:25:02,300 basehttp 124 "GET /login HTTP/1.1" 301 0
+WARNING 2019-06-16 07:25:02,306 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:25:02,307 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:26:05,245 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:26:05,246 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:26:07,019 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:26:07,020 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:26:57,479 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:26:57,481 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:27:08,507 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:27:08,509 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:27:30,785 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:27:30,789 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:29:04,794 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:29:04,797 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+WARNING 2019-06-16 07:30:03,226 base 93 Method Not Allowed (GET): /login/
+WARNING 2019-06-16 07:30:03,230 basehttp 124 "GET /login/ HTTP/1.1" 405 0
+INFO 2019-06-16 07:35:12,540 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+INFO 2019-06-16 07:35:12,587 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,590 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,615 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,621 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,625 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,628 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,640 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2019-06-16 07:35:12,642 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
+INFO 2019-06-16 07:35:12,697 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-16 07:35:12,703 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2019-06-16 07:35:12,726 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+WARNING 2019-06-16 07:35:12,749 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2019-06-16 07:37:01,675 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-16 07:37:01,704 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-16 07:37:01,722 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9125
+INFO 2019-06-16 07:37:01,754 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-16 07:37:01,758 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+WARNING 2019-06-16 07:37:01,787 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2019-06-16 07:37:01,917 exception 135 Internal Server Error: /image_codes/2030c600-711f-45b4-a00f-009d83535621/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:02,297 basehttp 124 "GET /image_codes/2030c600-711f-45b4-a00f-009d83535621/ HTTP/1.1" 500 121817
+ERROR 2019-06-16 07:37:02,329 exception 135 Internal Server Error: /image_codes/2030c600-711f-45b4-a00f-009d83535621/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:02,677 basehttp 124 "GET /image_codes/2030c600-711f-45b4-a00f-009d83535621/ HTTP/1.1" 500 122392
+INFO 2019-06-16 07:37:09,930 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 23
+WARNING 2019-06-16 07:37:34,651 base 152 Not Found: /mobile/17600774291/count/
+WARNING 2019-06-16 07:37:34,653 basehttp 124 "GET /mobile/17600774291/count/ HTTP/1.1" 404 3378
+ERROR 2019-06-16 07:37:36,650 exception 135 Internal Server Error: /image_codes/23a13fbe-a346-4b16-86a7-395d157fae56/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:36,991 basehttp 124 "GET /image_codes/23a13fbe-a346-4b16-86a7-395d157fae56/ HTTP/1.1" 500 121843
+ERROR 2019-06-16 07:37:37,016 exception 135 Internal Server Error: /image_codes/23a13fbe-a346-4b16-86a7-395d157fae56/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:37,350 basehttp 124 "GET /image_codes/23a13fbe-a346-4b16-86a7-395d157fae56/ HTTP/1.1" 500 122402
+ERROR 2019-06-16 07:37:38,415 exception 135 Internal Server Error: /image_codes/7e82c1b1-0e54-4293-af0b-d747fb1f1ba8/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:38,765 basehttp 124 "GET /image_codes/7e82c1b1-0e54-4293-af0b-d747fb1f1ba8/ HTTP/1.1" 500 121788
+ERROR 2019-06-16 07:37:38,792 exception 135 Internal Server Error: /image_codes/7e82c1b1-0e54-4293-af0b-d747fb1f1ba8/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:39,383 basehttp 124 "GET /image_codes/7e82c1b1-0e54-4293-af0b-d747fb1f1ba8/ HTTP/1.1" 500 122412
+WARNING 2019-06-16 07:37:44,855 base 152 Not Found: /mobile/17600774291/count/
+WARNING 2019-06-16 07:37:44,858 basehttp 124 "GET /mobile/17600774291/count/ HTTP/1.1" 404 3378
+INFO 2019-06-16 07:37:44,881 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 23
+ERROR 2019-06-16 07:37:52,736 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 53, in post
+    login(request, user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 07:37:53,154 basehttp 124 "POST /register/ HTTP/1.1" 500 150268
+ERROR 2019-06-16 08:12:20,047 views 49 (1062, "Duplicate entry 'python' for key 'username'")
+INFO 2019-06-16 08:12:20,134 basehttp 124 "POST /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-16 08:12:20,230 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2019-06-16 08:12:20,304 exception 135 Internal Server Error: /image_codes/8471801c-c6a2-43f7-84e0-c117b7aca294/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 08:12:20,620 basehttp 124 "GET /image_codes/8471801c-c6a2-43f7-84e0-c117b7aca294/ HTTP/1.1" 500 121815
+ERROR 2019-06-16 08:12:20,643 exception 135 Internal Server Error: /image_codes/8471801c-c6a2-43f7-84e0-c117b7aca294/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 08:12:20,887 basehttp 124 "GET /image_codes/8471801c-c6a2-43f7-84e0-c117b7aca294/ HTTP/1.1" 500 122400
+INFO 2019-06-16 08:13:15,599 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+WARNING 2019-06-16 08:13:15,747 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2019-06-16 08:13:16,064 exception 135 Internal Server Error: /image_codes/14babbae-7968-44d4-947e-842b526026c8/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 08:13:16,328 basehttp 124 "GET /image_codes/14babbae-7968-44d4-947e-842b526026c8/ HTTP/1.1" 500 121830
+ERROR 2019-06-16 08:13:16,352 exception 135 Internal Server Error: /image_codes/14babbae-7968-44d4-947e-842b526026c8/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 92, in get
+    redis_conn.setex(uuid, 300, text)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-16 08:13:16,679 basehttp 124 "GET /image_codes/14babbae-7968-44d4-947e-842b526026c8/ HTTP/1.1" 500 122412
+INFO 2019-06-16 08:14:00,470 basehttp 124 "GET /image_codes/606a792a-7368-450c-8465-49e2f8755b32/ HTTP/1.1" 200 3632
+INFO 2019-06-16 08:14:00,497 basehttp 124 "GET /image_codes/606a792a-7368-450c-8465-49e2f8755b32/ HTTP/1.1" 200 2867
+INFO 2019-06-16 08:14:57,219 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 23
+INFO 2019-06-16 08:15:55,668 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+WARNING 2019-06-16 08:15:55,796 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2019-06-16 08:17:08,276 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.login.views.UserLoginView didn't return an HttpResponse object. It returned None instead.
+ERROR 2019-06-16 08:17:21,310 basehttp 124 "POST /login/ HTTP/1.1" 500 67095
+INFO 2019-06-16 08:20:02,304 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+WARNING 2019-06-16 08:20:02,444 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2019-06-16 08:20:15,680 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 60, in post
+    return redirect(reversed('contents:contents'))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 56, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 147, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '<reversed object at 0x7f439826c6a0>' not found. '<reversed object at 0x7f439826c6a0>' is not a valid view function or pattern name.
+ERROR 2019-06-16 08:20:16,075 basehttp 124 "POST /login/ HTTP/1.1" 500 104436
+WARNING 2019-06-16 08:22:36,777 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-16 08:22:36,796 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+WARNING 2019-06-16 08:22:38,564 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-16 08:22:38,571 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2019-06-16 08:22:46,593 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+INFO 2019-06-16 08:22:46,630 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2019-06-16 08:22:46,644 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,647 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,652 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,663 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,664 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
+INFO 2019-06-16 08:22:46,672 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,675 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,712 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2019-06-16 08:22:46,725 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-06-16 08:22:46,726 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+ERROR 2019-06-16 08:22:57,286 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 60, in post
+    return redirect(reversed('contents:contents'))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 56, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 147, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '<reversed object at 0x7f11dd7664a8>' not found. '<reversed object at 0x7f11dd7664a8>' is not a valid view function or pattern name.
+ERROR 2019-06-16 08:22:57,536 basehttp 124 "POST /login/ HTTP/1.1" 500 104462
+WARNING 2019-06-16 08:24:55,017 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-16 08:24:55,021 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+WARNING 2019-06-16 08:25:02,768 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-16 08:25:02,771 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2019-06-16 08:25:07,055 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+ERROR 2019-06-16 08:25:20,094 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 60, in post
+    return redirect(reversed('contents:index'))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 56, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/shortcuts.py", line 147, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '<reversed object at 0x7f06ceb62198>' not found. '<reversed object at 0x7f06ceb62198>' is not a valid view function or pattern name.
+ERROR 2019-06-16 08:25:20,202 basehttp 124 "POST /login/ HTTP/1.1" 500 102540
+WARNING 2019-06-16 08:26:33,461 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-16 08:26:33,464 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2019-06-16 08:26:36,306 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+INFO 2019-06-16 08:26:43,696 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2019-06-16 08:26:43,737 basehttp 124 "GET /contents/ HTTP/1.1" 200 30173
+INFO 2019-06-16 08:26:43,790 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2019-06-16 08:26:43,801 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-16 08:26:43,803 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2019-06-16 08:26:43,818 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2019-06-16 08:26:43,826 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+INFO 2019-06-16 08:26:43,862 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2019-06-16 08:26:43,864 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2019-06-16 08:26:43,871 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2019-06-16 08:26:43,873 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2019-06-16 08:26:43,875 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2019-06-16 08:26:43,876 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2019-06-16 08:26:43,891 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2019-06-16 08:26:43,893 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2019-06-16 08:26:43,893 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2019-06-16 08:26:43,894 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2019-06-16 08:26:43,895 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2019-06-16 08:26:43,901 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2019-06-16 08:26:43,907 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2019-06-16 08:26:43,908 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2019-06-16 08:26:43,910 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+WARNING 2019-06-16 08:26:44,398 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 08:26:44,399 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-16 08:33:59,760 basehttp 124 "GET /login/ HTTP/1.1" 200 2987
+INFO 2019-06-16 08:46:30,531 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-16 08:54:21,664 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-16 08:54:28,968 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2019-06-16 08:54:29,001 basehttp 124 "GET /contents/ HTTP/1.1" 200 30170
+WARNING 2019-06-16 08:54:29,935 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 08:54:29,937 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+WARNING 2019-06-16 08:54:49,065 basehttp 124 "GET /static/login.html HTTP/1.1" 404 1649
+WARNING 2019-06-16 08:54:55,779 basehttp 124 "GET /static/login HTTP/1.1" 404 1634
+INFO 2019-06-16 08:59:22,080 basehttp 124 "GET /contents/ HTTP/1.1" 200 30180
+WARNING 2019-06-16 08:59:22,323 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 08:59:22,325 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-16 08:59:27,388 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-16 08:59:35,208 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2019-06-16 08:59:35,226 basehttp 124 "GET /contents/ HTTP/1.1" 200 30180
+WARNING 2019-06-16 08:59:35,572 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 08:59:35,575 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-16 09:01:46,807 basehttp 124 "GET /contents/ HTTP/1.1" 200 30171
+WARNING 2019-06-16 09:01:47,036 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 09:01:47,038 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-16 09:01:48,202 basehttp 124 "GET /contents/ HTTP/1.1" 200 30171
+WARNING 2019-06-16 09:01:48,377 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 09:01:48,377 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-16 09:01:49,486 basehttp 124 "GET /contents/ HTTP/1.1" 200 30171
+WARNING 2019-06-16 09:01:49,673 base 152 Not Found: /carts/simple/
+WARNING 2019-06-16 09:01:49,673 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-17 05:19:06,976 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-17 05:19:07,006 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,016 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,023 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,026 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,031 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,032 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,038 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,060 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2019-06-17 05:19:07,103 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 05:19:07,113 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,115 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2019-06-17 05:19:07,124 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+WARNING 2019-06-17 05:19:07,208 base 152 Not Found: /favicon.ico
+WARNING 2019-06-17 05:19:07,212 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3339
+ERROR 2019-06-17 05:19:41,427 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 52, in post
+    login(request, user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/views.py", line 54, in inner
+    return func(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/views.py", line 150, in login
+    )(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/views.py", line 119, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 05:20:01,915 basehttp 124 "POST /login/ HTTP/1.1" 500 222221
+ERROR 2019-06-17 05:23:10,020 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 52, in post
+    login(request, user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 05:23:18,148 basehttp 124 "POST /login/ HTTP/1.1" 500 149348
+ERROR 2019-06-17 05:27:10,533 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 59, in post
+    login(request, user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 05:27:10,750 basehttp 124 "POST /login/ HTTP/1.1" 500 149374
+ERROR 2019-06-17 05:28:16,880 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 64, in post
+    login(request, user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 05:28:17,074 basehttp 124 "POST /login/ HTTP/1.1" 500 148907
+ERROR 2019-06-17 05:30:31,059 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 64, in post
+    login(request, user)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-06-17 05:30:31,256 basehttp 124 "POST /login/ HTTP/1.1" 500 148959
+INFO 2019-06-17 05:32:35,179 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2019-06-17 05:32:35,209 basehttp 124 "GET /contents/ HTTP/1.1" 200 30330
+INFO 2019-06-17 05:32:35,255 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,257 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,281 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,289 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 304 0
+WARNING 2019-06-17 05:32:35,299 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+INFO 2019-06-17 05:32:35,310 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,315 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,316 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,324 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,325 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,332 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,334 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,336 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,339 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,343 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,349 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,359 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,362 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,366 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,367 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 304 0
+INFO 2019-06-17 05:32:35,368 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 304 0
+WARNING 2019-06-17 05:32:35,612 base 152 Not Found: /carts/simple/
+WARNING 2019-06-17 05:32:35,613 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-17 05:33:11,496 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+WARNING 2019-06-17 05:33:11,553 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1667
+WARNING 2019-06-17 05:34:29,024 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+WARNING 2019-06-17 05:41:04,652 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+WARNING 2019-06-17 05:44:16,174 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+WARNING 2019-06-17 05:44:16,178 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+ERROR 2019-06-17 05:45:53,505 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 49, in post
+    user = super.authenticate(username=username, password=password)
+AttributeError: type object 'super' has no attribute 'authenticate'
+ERROR 2019-06-17 05:45:53,652 basehttp 124 "POST /login/ HTTP/1.1" 500 86720
+WARNING 2019-06-17 05:56:27,767 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+INFO 2019-06-17 05:56:38,973 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+WARNING 2019-06-17 05:56:52,538 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+INFO 2019-06-17 05:58:39,827 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+ERROR 2019-06-17 05:58:49,858 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 57, in post
+    user = UsernameMobileAuthBackend.authenticate(username=username, password=password)
+TypeError: authenticate() missing 2 required positional arguments: 'self' and 'request'
+ERROR 2019-06-17 05:58:56,343 basehttp 124 "POST /login/ HTTP/1.1" 500 86619
+WARNING 2019-06-17 06:00:19,592 basehttp 124 "POST /login/ HTTP/1.1" 400 39
+ERROR 2019-06-17 06:02:23,130 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 57, in post
+    user = authenticate(self, request, username=username, password=password)
+TypeError: authenticate() takes from 0 to 1 positional arguments but 2 were given
+ERROR 2019-06-17 06:02:23,267 basehttp 124 "POST /login/ HTTP/1.1" 500 86515
+ERROR 2019-06-17 06:06:55,612 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 58, in post
+    user = authenticate(username)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 31, in authenticate
+    user = get_user_by_account(username)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 19, in get_user_by_account
+    if re.match('^1[3-9]\d{9}$', account):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/re.py", line 163, in match
+    return _compile(pattern, flags).match(string)
+TypeError: expected string or bytes-like object
+ERROR 2019-06-17 06:06:55,777 basehttp 124 "POST /login/ HTTP/1.1" 500 106747
+WARNING 2019-06-17 06:07:20,480 base 152 Not Found: /index/
+WARNING 2019-06-17 06:07:20,482 basehttp 124 "GET /index/ HTTP/1.1" 404 3318
+WARNING 2019-06-17 06:07:20,544 base 152 Not Found: /favicon.ico
+WARNING 2019-06-17 06:07:20,545 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3333
+WARNING 2019-06-17 06:08:29,517 base 152 Not Found: /
+WARNING 2019-06-17 06:08:29,518 basehttp 124 "GET / HTTP/1.1" 404 3288
+WARNING 2019-06-17 06:08:29,592 base 152 Not Found: /favicon.ico
+WARNING 2019-06-17 06:08:29,592 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3339
+INFO 2019-06-17 06:08:38,826 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-17 06:11:32,862 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+ERROR 2019-06-17 06:11:41,738 exception 135 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 58, in post
+    user = authenticate(username)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 31, in authenticate
+    user = get_user_by_account(username)
+  File "/home/lsy/Desktop/project/meiduo/apps/login/views.py", line 19, in get_user_by_account
+    if re.match('^1[3-9]\d{9}$', account):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/re.py", line 163, in match
+    return _compile(pattern, flags).match(string)
+TypeError: expected string or bytes-like object
+ERROR 2019-06-17 06:11:41,914 basehttp 124 "POST /login/ HTTP/1.1" 500 106773
+WARNING 2019-06-17 06:15:37,219 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-17 06:15:37,232 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+WARNING 2019-06-17 06:15:37,292 base 152 Not Found: /favicon.ico
+WARNING 2019-06-17 06:15:37,294 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3339
+WARNING 2019-06-17 06:15:52,535 csrf 160 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2019-06-17 06:15:52,539 basehttp 124 "POST /login/ HTTP/1.1" 403 2502
+INFO 2019-06-17 06:15:59,562 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+INFO 2019-06-17 06:16:27,135 basehttp 124 "GET /register/ HTTP/1.1" 200 4878
+INFO 2019-06-17 06:16:27,154 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2019-06-17 06:16:27,171 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 304 0
+INFO 2019-06-17 06:16:27,173 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 304 0
+INFO 2019-06-17 06:16:27,251 basehttp 124 "GET /image_codes/df0f6e68-5e37-4812-9847-46c64635b09d/ HTTP/1.1" 200 2888
+INFO 2019-06-17 06:16:27,266 basehttp 124 "GET /image_codes/df0f6e68-5e37-4812-9847-46c64635b09d/ HTTP/1.1" 200 3054
+INFO 2019-06-17 06:16:31,013 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 23
+INFO 2019-06-17 06:16:43,119 basehttp 124 "GET /usernames/lsylsy/count/ HTTP/1.1" 200 23
+WARNING 2019-06-17 06:17:03,660 base 152 Not Found: /mobile/17600774293/count/
+WARNING 2019-06-17 06:17:03,664 basehttp 124 "GET /mobile/17600774293/count/ HTTP/1.1" 404 3381
+WARNING 2019-06-17 06:17:03,817 base 152 Not Found: /mobile/17600774293/count/
+WARNING 2019-06-17 06:17:03,818 basehttp 124 "GET /mobile/17600774293/count/ HTTP/1.1" 404 3381
+INFO 2019-06-17 06:17:03,829 basehttp 124 "GET /usernames/lsylsy/count/ HTTP/1.1" 200 23
+WARNING 2019-06-17 06:17:06,492 basehttp 124 "POST /login/ HTTP/1.1" 400 27
+ERROR 2019-06-17 06:17:14,690 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lsy/Desktop/project/meiduo/apps/users/views.py", line 55, in post
+    return redirect(reverse('contents:contents'))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/lsy/.virtualenvs/py3_django/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'contents' not found. 'contents' is not a valid view function or pattern name.
+ERROR 2019-06-17 06:17:14,846 basehttp 124 "POST /register/ HTTP/1.1" 500 99772
+INFO 2019-06-17 06:17:55,945 basehttp 124 "GET /login/ HTTP/1.1" 200 3038
+WARNING 2019-06-17 06:18:36,490 basehttp 124 "POST /login/ HTTP/1.1" 400 27
+INFO 2019-06-17 06:27:21,141 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2019-06-17 06:27:21,155 basehttp 124 "GET /contents/ HTTP/1.1" 200 30330
+WARNING 2019-06-17 06:27:21,571 base 152 Not Found: /carts/simple/
+WARNING 2019-06-17 06:27:21,572 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3345
+INFO 2019-06-17 06:35:15,288 basehttp 124 "GET /contents/ HTTP/1.1" 200 30337
+WARNING 2019-06-17 06:35:15,411 base 152 Not Found: /carts/simple/
+WARNING 2019-06-17 06:35:15,414 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3517
+INFO 2019-06-17 06:35:17,865 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-06-17 06:35:17,869 basehttp 124 "GET /contents/ HTTP/1.1" 200 30337
+WARNING 2019-06-17 06:35:17,992 base 152 Not Found: /carts/simple/
+WARNING 2019-06-17 06:35:17,993 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3517
+INFO 2019-06-17 06:48:35,271 basehttp 124 "GET /contents/login.html HTTP/1.1" 302 0
+INFO 2019-06-17 06:48:35,294 basehttp 124 "GET /login/?next=/contents/login.html HTTP/1.1" 200 3038
+INFO 2019-06-17 06:48:41,892 basehttp 124 "POST /login/?next=/contents/login.html HTTP/1.1" 302 0
+INFO 2019-06-17 06:48:41,917 basehttp 124 "GET /contents/ HTTP/1.1" 200 30337
+WARNING 2019-06-17 06:48:42,038 base 152 Not Found: /carts/simple/
+WARNING 2019-06-17 06:48:42,041 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 3703
+INFO 2019-06-17 06:48:47,075 basehttp 124 "GET /static/user_center_info.html HTTP/1.1" 200 5406
+INFO 2019-06-17 06:48:47,088 basehttp 124 "GET /static/images/goods/goods006.jpg HTTP/1.1" 200 6836
+INFO 2019-06-17 06:48:47,095 basehttp 124 "GET /static/images/goods/goods007.jpg HTTP/1.1" 200 3936
+INFO 2019-06-17 06:48:47,096 basehttp 124 "GET /static/js/user_center_info.js HTTP/1.1" 200 3202
+INFO 2019-06-17 06:48:47,103 basehttp 124 "GET /static/images/shop_cart.png HTTP/1.1" 200 1317
+INFO 2019-06-17 06:48:47,104 basehttp 124 "GET /static/images/left_bg.jpg HTTP/1.1" 200 1367
+INFO 2019-06-17 06:50:43,245 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-06-17 06:50:43,249 basehttp 124 "GET /contents/ HTTP/1.1" 302 0
+INFO 2019-06-17 06:50:43,257 basehttp 124 "GET /login/?next=/contents/ HTTP/1.1" 200 3038

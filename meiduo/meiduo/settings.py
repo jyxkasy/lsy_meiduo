@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users',
+    'apps.login',
+    'apps.contents'
 
 
 ]
@@ -199,4 +201,10 @@ LOGGING = {
 
 
 AUTH_USER_MODEL = 'users.User'
+
+AUTHENTICATION_BACKENDS = [
+    'apps.login.views.UsernameMobileAuthBackend'
+]
+
+LOGIN_URL = '/login/'
 
